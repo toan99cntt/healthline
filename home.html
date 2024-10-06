@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./home/style.css">
+  <link rel="stylesheet" href="./font/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body class="pt-[65px]">
+  <div class="bg-black w-full flex justify-center fixed top-0 left-0 z-[9] px-3 md:px-[47px]" id="menu-header">
+    <div class="max-w-[1100px] flex-auto ">
+      <div class="justify-between items-center hidden md:flex">
+        <div class="flex-auto text-[20px] gap-[20px] lg:gap-[26px] py-[20px] items-center text-white font-bold flex">
+          <a class="text-[30px] font-bold" href="/">
+            healthline
+          </a>
+          <div>Health Conditions <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+          <div>Discover <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+          <div>Plan <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+          <div>Connect <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+        </div>
+        <div class="flex gap-3 text-white items-center font-bold">
+          <div>SUBSCRIBE</div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div> 
+      </div>
+      <div class="flex justify-between items-center text-white md:hidden py-[15px]">
+        <div class="flex gap-4 text-[23px]">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="flex-auto text-center">
+          <a class="text-[30px] text-white font-bold" href="/">
+            healthline
+          </a>
+        </div>
+        <div class=" font-bold">
+          SUBSCRIBE
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="main bg-[#f7f7f7] px-3 md:px-[47px] leading-[normal]">
+    <div class="md:max-w-[1100px] max-w-[550px] w-full py-6 text-left">
+      <div class="lg:flex grid grid-cols-1 gap-[48px] mb-[70px]">
+        <div class="relative rounded-[5px] overflow-hidden flex-1 lg:h-auto md:h-[494px]">
+          <img class="w-full h-full object-cover hidden md:block"
+            src="https://media.post.rvohealth.io/wp-content/uploads/2024/09/family-personality-homepage-left-thumb-crop-732x673-1.jpg">
+          <div class="md:p-[20px] md:absolute bottom-0 left-0">
+            <div class="space-y-[16px] bg-white md:bg-[#f7f7f7] rounded-[5px] px-[24px] py-[20px]">
+              <div class="text-[30px] lg:text-[34px] font-bold leading-10">How Much of Your Personality Is Encoded in
+                Your DNA?</div>
+              <div class="text-[18px]">And can you change your personality as an adult?</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 w-full lg:max-w-[450px] grid grid-cols-1 bg-white rounded-[5px] overflow-hidden">
+          <div>
+            <img src="https://media.post.rvohealth.io/wp-content/uploads/2024/09/mouth-taping-732x549-thumbnail.jpg"
+              width="100%" height="100%" alt="">
+          </div>
+          <div class="space-y-[10px] px-[20px] py-[15px]">
+            <div class="text-[30px] lg:text-[34px] font-bold leading-10">What Is Mouth Taping, and Does It Help Snoring
+              or Sleep Apnea?</div>
+            <div>Mouth taping involves applying a piece of tape over your lips before bedtime.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-[20px] mb-[70px]">
+        <div class="flex justify-between items-center uppercase font-bold pb-[20px] border-b-[1px] border-[#dcdbdb]">
+          <div class="text-[24px]">Explore by</div>
+          <div class="text-[18px] text-[#02838d]">
+            View all
+            <i class="fa-regular fa-circle-right"></i>
+          </div>
+        </div>
+        <div
+          class="md:flex grid grid-cols-2 pt-[28px] font-bold text-[20px] lg:text-[26px] text-center lg:justify-between">
+          <a href="/" class="hover:text-[#db1f88] hover:opacity-[0.8] place-self-center">
+            <div class="max-w-[180px]">
+              <img
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/02/Explore_By-Nutrition.png?w=451&h=336"
+                alt="">
+            </div>
+            <div>Nutrition</div>
+          </a>
+          <a href="/" class="hover:text-[#db1f88] hover:opacity-[0.8] place-self-center">
+            <div class="max-w-[180px]">
+              <img
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/02/Explore_By-Nutrition.png?w=451&h=336"
+                alt="">
+            </div>
+            <div>Sleep</div>
+          </a>
+          <a href="/" class="hover:text-[#db1f88] hover:opacity-[0.8] place-self-center">
+            <div class="max-w-[180px]">
+              <img
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/02/Explore_By-Nutrition.png?w=451&h=336"
+                alt="">
+            </div>
+            <div>Mental Health</div>
+          </a>
+          <a href="/" class="hover:text-[#db1f88] hover:opacity-[0.8] place-self-center">
+            <div class="max-w-[180px]">
+              <img
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/02/Explore_By-Nutrition.png?w=451&h=336"
+                alt="">
+            </div>
+            <div>Fitness</div>
+          </a>
+          <a href="/" class="hover:text-[#db1f88] hover:opacity-[0.8] place-self-center">
+            <div class="max-w-[180px]">
+              <img
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/02/Explore_By-Nutrition.png?w=451&h=336"
+                alt="">
+            </div>
+            <div>Product Reviews</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="space-y-[20px] mb-[70px]">
+        <div class="uppercase font-bold pb-[20px] border-b-[1px] border-[#dcdbdb] mb-[50px]">
+          <div class="text-[24px]">this just in</div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-9">
+          <div class="flex gap-[20px]">
+            <div class="lg:max-w-[145px] max-w-[120px] hover:opacity-[0.8]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/08/key-art-groupblack_maternal-health_thumb_732x549.jpg"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold hover:text-[#db1f88] hover:opacity-[0.8]">All About
+                Maternal Health</div>
+              <div>We celebrate Black parenting and highlight important work to fight inequality.</div>
+            </div>
+          </div>
+          <div class="flex gap-[20px]">
+            <div class="lg:max-w-[145px] max-w-[120px] hover:opacity-[0.8]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/08/key-art-groupblack_maternal-health_thumb_732x549.jpg"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold hover:text-[#db1f88] hover:opacity-[0.8]">All About
+                Maternal Health</div>
+              <div>We celebrate Black parenting and highlight important work to fight inequality.</div>
+            </div>
+          </div>
+          <div class="flex gap-[20px]">
+            <div class="lg:max-w-[145px] max-w-[120px] hover:opacity-[0.8]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/08/key-art-groupblack_maternal-health_thumb_732x549.jpg"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold hover:text-[#db1f88] hover:opacity-[0.8]">All About
+                Maternal Health</div>
+              <div>We celebrate Black parenting and highlight important work to fight inequality.</div>
+            </div>
+          </div>
+          <div class="flex gap-[20px]">
+            <div class="lg:max-w-[145px] max-w-[120px] hover:opacity-[0.8]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/08/key-art-groupblack_maternal-health_thumb_732x549.jpg"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold hover:text-[#db1f88] hover:opacity-[0.8]">All About
+                Maternal Health</div>
+              <div>We celebrate Black parenting and highlight important work to fight inequality.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-[20px] mb-[70px]">
+        <div class="uppercase font-bold pb-[20px] border-b-[1px] border-[#dcdbdb] mb-[25px]">
+          <div class="text-[24px]">More top reads</div>
+        </div>
+        <div class="flex space-x-[15px] overflow-auto">
+          <div class="space-y-2 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden min-w-[200px]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/08/key-art-groupblack_maternal-health_thumb_732x549.jpg"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[16px] lg:text-[18px] font-bold">12 Signs of Narcissistic Abuse Syndrome (and How to Get
+                Help)</div>
+            </div>
+          </div>
+          <div class="space-y-2 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden min-w-[200px]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/08/key-art-groupblack_maternal-health_thumb_732x549.jpg"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[16px] lg:text-[18px] font-bold">12 Signs of Narcissistic Abuse Syndrome (and How to Get
+                Help)</div>
+            </div>
+          </div>
+          <div class="space-y-2 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden min-w-[200px]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/08/key-art-groupblack_maternal-health_thumb_732x549.jpg"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[16px] lg:text-[18px] font-bold">12 Signs of Narcissistic Abuse Syndrome (and How to Get
+                Help)</div>
+            </div>
+          </div>
+          <div class="space-y-2 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden min-w-[200px]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/08/key-art-groupblack_maternal-health_thumb_732x549.jpg"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[16px] lg:text-[18px] font-bold">12 Signs of Narcissistic Abuse Syndrome (and How to Get
+                Help)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img src="https://assets-jpcust.jwpsrv.com/thumbnails/men9vqmg-720.jpg" width="100%" alt="">
+      </div>
+
+      <div class="space-y-[20px] mb-[50px]">
+        <div class="uppercase font-bold pb-[20px] border-b-[1px] border-[#dcdbdb] mb-[25px]">
+          <div class="text-[24px]">MORE TOP VIDEOS</div>
+        </div>
+        <div class="flex space-x-[15px] overflow-auto">
+          <div class="space-y-2 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden min-w-[200px]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/05/Vraylar-Video-1-732x549-1.png" alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[16px] lg:text-[18px] font-bold">Pieces of Advice: Tamara Marbury</div>
+            </div>
+          </div>
+          <div class="space-y-2 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden min-w-[200px]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/05/Vraylar-Video-1-732x549-1.png" alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[16px] lg:text-[18px] font-bold">Pieces of Advice: Tamara Marbury</div>
+            </div>
+          </div>
+          <div class="space-y-2 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden min-w-[200px]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/05/Vraylar-Video-1-732x549-1.png" alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[16px] lg:text-[18px] font-bold">Pieces of Advice: Tamara Marbury</div>
+            </div>
+          </div>
+          <div class="space-y-2 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden min-w-[200px]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/05/Vraylar-Video-1-732x549-1.png" alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[16px] lg:text-[18px] font-bold">Pieces of Advice: Tamara Marbury</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-[20px] mb-[50px]">
+        <div class="uppercase font-bold pb-[20px] border-b-[1px] border-[#dcdbdb] mb-[25px]">
+          <div class="text-[24px]">Health Conditions</div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+          <div class="grid grid-cols-1 justify-items-center gap-3 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden md:max-w-[180px] max-w-[255px]">
+              <img width="100%"
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/HL-Hub_Key_Art-T2D_600x900-Pinterest-copy-3.jpg?w=451&h=336"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold">Type 2 Diabetes</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 justify-items-center gap-3 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden md:max-w-[180px] max-w-[255px]">
+              <img width="100%"
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/HL-Hub_Key_Art-T2D_600x900-Pinterest-copy-3.jpg?w=451&h=336"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold">Type 2 Diabetes</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 justify-items-center gap-3 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden md:max-w-[180px] max-w-[255px]">
+              <img width="100%"
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/HL-Hub_Key_Art-T2D_600x900-Pinterest-copy-3.jpg?w=451&h=336"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold">Type 2 Diabetes</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 justify-items-center gap-3 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden md:max-w-[180px] max-w-[255px]">
+              <img width="100%"
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/HL-Hub_Key_Art-T2D_600x900-Pinterest-copy-3.jpg?w=451&h=336"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold">Type 2 Diabetes</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 justify-items-center gap-3 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden md:max-w-[180px] max-w-[255px]">
+              <img width="100%"
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/HL-Hub_Key_Art-T2D_600x900-Pinterest-copy-3.jpg?w=451&h=336"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold">Type 2 Diabetes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-[20px] mb-[50px]">
+        <div class="uppercase font-bold pb-[20px] border-b-[1px] border-[#dcdbdb] mb-[25px]">
+          <div class="text-[24px]">Product Reviews</div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+          <div class="grid grid-cols-1 gap-3 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden md:max-w-[200px] lg:max-w-none">
+              <img width="100%"
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/04/Vitamins-Supplements-8.png?w=451&h=336"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold">Vitamins & Supplements</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-3 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden md:max-w-[200px] lg:max-w-none">
+              <img width="100%"
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/04/Vitamins-Supplements-8.png?w=451&h=336"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold">Vitamins & Supplements</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-3 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden md:max-w-[200px] lg:max-w-none">
+              <img width="100%"
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/04/Vitamins-Supplements-8.png?w=451&h=336"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold">Vitamins & Supplements</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-3 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden md:max-w-[200px] lg:max-w-none">
+              <img width="100%"
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/04/Vitamins-Supplements-8.png?w=451&h=336"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold">Vitamins & Supplements</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-3 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden md:max-w-[200px] lg:max-w-none">
+              <img width="100%"
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/04/Vitamins-Supplements-8.png?w=451&h=336"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[20px] lg:text-[26px] font-bold">Vitamins & Supplements</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-[20px] mb-[50px]">
+        <div class="uppercase font-bold pb-[20px] border-b-[1px] border-[#dcdbdb] mb-[25px]">
+          <div class="text-[24px]">SPOTLIGHT</div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="grid grid-cols-1 gap-3 rounded-[5px] overflow-hidden hover:opacity-[0.8]">
+            <img width="100%"
+              src="https://media.post.rvohealth.io/wp-content/uploads/2024/10/MDS-Foundation_Pinterest-600x900-copy.png"
+              alt="">
+          </div>
+          <div class="grid grid-cols-1 gap-3 rounded-[5px] overflow-hidden hover:opacity-[0.8]">
+            <img width="100%"
+              src="https://media.post.rvohealth.io/wp-content/uploads/2024/09/ALTG-Key-Art-Request-IgAN-Foundation_Soptlight_600x900.png"
+              alt="">
+          </div>
+          <div class="grid grid-cols-1 gap-3 rounded-[5px] overflow-hidden hover:opacity-[0.8]">
+            <img width="100%"
+              src="https://media.post.rvohealth.io/wp-content/uploads/2023/10/Templates-for-Spotlights-02.jpg" alt="">
+          </div>
+          <div class="grid grid-cols-1 gap-3 rounded-[5px] overflow-hidden hover:opacity-[0.8]">
+            <img width="100%"
+              src="https://media.post.rvohealth.io/wp-content/uploads/2024/10/Cold-Flu-Survival-Guide.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-[20px] mb-[50px]">
+        <div
+          class="uppercase font-bold pb-[20px] border-b-[1px] border-[#dcdbdb] mb-[25px] flex justify-between items-center">
+          <div class="text-[24px]">Health Conditions</div>
+          <div class="text-[18px] text-[#02838d]">
+            View all
+            <i class="fa-regular fa-circle-right"></i>
+          </div>
+        </div>
+        <div class="flex space-x-[15px] overflow-auto">
+          <div class="space-y-2 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden min-w-[200px]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/07/Key-Art-Gold-Bond-Eczema-program_thumb_732x549.png"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[16px] lg:text-[18px] font-bold">Your Eczema Skin Care Roadmap</div>
+            </div>
+          </div>
+          <div class="space-y-2 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden min-w-[200px]">
+              <img width="100%"
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/11/vezenio-thumb-image.jpg" alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[16px] lg:text-[18px] font-bold">Your Eczema Skin Care Roadmap</div>
+            </div>
+          </div>
+          <div class="space-y-2 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden min-w-[200px]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/08/300659-PLP-Fasenra-asthma-732x549-thumb.jpg"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[16px] lg:text-[18px] font-bold">Your Eczema Skin Care Roadmap</div>
+            </div>
+          </div>
+          <div class="space-y-2 hover:text-[#db1f88] hover:opacity-[0.8]">
+            <div class="rounded-[5px] overflow-hidden min-w-[200px]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2021/04/Multiple_Sclerosis-732x549-Large_Thumbnail.jpeg"
+                alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <div class="text-[16px] lg:text-[18px] font-bold">Your Eczema Skin Care Roadmap</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="bg-[#fbf5ed] text-[14px] py-[40px] md:px-[47px] main">
+      <div class="md:max-w-[1100px] max-w-[550px] w-full py-6 px-[10px]">
+        <div class="inline lg:flex gap-[55px] lg:space-y-2 space-y-[30px] items-center mb-[20px] lg:mb-[60px]">
+          <a href="/" class="lg:w-[191px] flex w-full justify-center lg:justify-start">
+            <img width="191px" src="https://s3-us-west-2.amazonaws.com/healthline-prod-next/content/hl-black.svg
+            " alt="">
+          </a>
+          <div class="flex gap-5 text-[19px] justify-center lg:justify-start">
+            <a href="/">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-flipboard"></i>
+            </a>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-5">
+          <div class="justify-self-center lg:justify-self-start lg:max-w-[100%] max-w-[550px]">
+            <div class="space-y-[15px] lg:text-left text-center">
+              <div class="text-[26px] font-bold">Get our wellness newsletter</div>
+              <div>Filter out the noise and nurture your inbox with health and wellness advice that’s inclusive and rooted
+                in medical expertise.</div>
+              <div class="flex lg:justify-start justify-center">
+                <input type="text" class="w-[215px] px-[10px]" placeholder="Enter your email">
+                <div
+                  class="uppercase w-[150px] h-[50px] text-center text-white bg-[#02838d] hover:bg-[#db1f88] content-center font-bold">
+                  Sign up</div>
+              </div>
+              <div class="text-black text-[14px]">
+                Your <a href="/" class="inline">privacy</a> is important to us
+              </div>
+            </div>
+          </div>
+          <div class="justify-self-center lg:justify-self-start space-y-[20px]">
+            <div class="flex text-left font-bold gap-5 lg:max-w-[100%] max-w-[550px] justify-center lg:justify-start">
+              <div class="space-y-[10px] w-full max-w-[150px]">
+                <a href="/">About Us</a>
+                <a href="/">Contact Us</a>
+                <a href="/">Privacy Policy</a>
+                <a href="/">Privacy Settings</a>
+                <a href="/">Advertising Policy</a>
+                <a href="/">Health Topics</a>
+              </div>
+              <div class="space-y-[10px]">
+                <a href="/">Sitemap</a>
+                <a href="/">Medical Affairs</a>
+                <a href="/">Content Integrity</a>
+                <a href="/">Newsletters</a>
+                <div class="hidden lg:block">© 2024 Healthline Media LLC. All rights reserved. Healthline Media is an RVO
+                  Health Company. Our website services, content, and products are for informational purposes only.
+                  Healthline Media does not provide medical advice, diagnosis, or treatment. See additional information.
+                </div>
+              </div>
+            </div>
+            <div class="lg:hidden block max-w-[550px]">© 2024 Healthline Media LLC. All rights reserved. Healthline Media
+              is an RVO Health Company. Our website services, content, and products are for informational purposes only.
+              Healthline Media does not provide medical advice, diagnosis, or treatment. See additional information.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-[14px] md:px-[47px] main">
+      <div class="md:max-w-[1100px] max-w-[550px] w-full py-6 px-[10px] block lg:flex gap-[40px]">
+        <div>
+          <a href="/">
+            <svg alt="Healthline Media" width="132" height="50" class="css-11hc4ky" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 132 50">
+              <path fill="#FFF"
+                d="M30.477 38.313v9.62h3.98V50h-6.36V38.313h2.38zm11.137 0v2.068h-2.548V50h-2.308v-9.62h-2.565v-2.067h7.421zm3.645 0v4.643h3.826v-4.643h2.337V50h-2.337v-4.976h-3.826V50h-2.32V38.313h2.32zm10.4 0v9.62h3.98V50h-6.362V38.313h2.381zm7.69 0V50h-2.12V38.313h2.12zm4.48 0 3.798 7.149v-7.149h2.325V50h-2.22l-3.955-7.447V50H65.47V38.313h2.359zm14.605 0v2.05h-4.13v2.681h4.013v2.032h-4.013v2.874h4.13V50h-6.362V38.313h6.362zm8.654 0 2.213 7.009 2.23-7.009h3.071V50h-2.264v-8.025L93.764 50h-.943l-2.54-8.025V50H88V38.313h3.088zm15.996 0v2.05h-4.13v2.681h4.014v2.032h-4.014v2.874h4.13V50h-6.361V38.313h6.361zm-104.764 0v4.643h3.825v-4.643h2.337V50H6.145v-4.976H2.32V50H0V38.313h2.32zm14.644 0v2.05h-4.13v2.681h4.013v2.032h-4.013v2.874h4.13V50h-6.362V38.313h6.362zm104.434 0V50h-2.12V38.313h2.12zm7.216-.065L132 49.935h-2.377l-.53-2.085h-3.728l-.53 2.085h-2.377l3.386-11.687h2.77zm-16.063 0c1.008 0 1.878.246 2.612.736.733.49 1.293 1.18 1.68 2.068.386.888.579 1.904.579 3.049 0 1.144-.19 2.158-.571 3.04-.381.882-.938 1.568-1.671 2.058-.734.49-1.61.736-2.629.736h-3.611V38.248h3.611zm-88.636 0 3.386 11.687h-2.377l-.53-2.085h-3.728l-.53 2.085h-2.377l3.386-11.687h2.77zm88.787 2.125h-1.377v7.437h1.377c.826 0 1.466-.339 1.92-1.018.452-.678.68-1.576.68-2.692 0-1.161-.224-2.073-.672-2.735-.448-.661-1.09-.992-1.928-.992zm14.394 0-1.457 5.578h2.915l-1.458-5.578zm-104.698 0-1.458 5.578h2.915l-1.457-5.578zM64.41.044c2.696-.128 2.3.047 3.785.227 3.92.477 7.448 3 9.744 6.016 1.679 2.204 1.893 4.935 1.835 7.58-.09 4.159-1.486 7.861-4.778 10.56-1.194.98-2.662 1.623-3.389 2.054-4.773 1.914-9.086 1.207-12.91-.525-2.566-1.16-4.286-3.257-5.25-5.988-.533-1.511-.81-3.018-1.112-4.588-.201-1.048-.1-2.166-.043-3.248.029-.556.254-1.101.393-1.65C54.11 4.863 58.62.32 64.411.043zm1.307 5.003-.046.01-6.204 2.374a.147.147 0 0 0-.067.222l.919 1.272v11.912c0 .081.065.146.146.146h5.259c.08 0 .146-.065.146-.146v-9.013a.395.395 0 0 1 .792 0v9.013c0 .081.065.146.146.146h5.936a.146.146 0 0 0 .131-.211l-.634-1.262v-5.668c0-3.283-2.62-3.74-4.185-3.74-1.043 0-1.859.366-2.186.61v-5.52a.146.146 0 0 0-.199-.136z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <div class="block lg:flex items-center text-white flex-auto">
+          <div class="grid grid-cols-1 flex-auto gap-3">
+            <div class="flex lg:justify-end justify-center">
+              <a href="/" class="divide">About</a>
+              <a href="/" class="divide">Careers</a>
+              <a href="/">Advertise with us</a>
+            </div>
+            <div class="lg:flex block lg:justify-end justify-center"> 
+              <div class="uppercase font-bold lg:mr-4">Our brands</div>
+              <a href="/" class="divide">Healthline</a>
+              <a href="/" class="divide">Medical News Today</a>
+              <a href="/" class="divide">Greatist</a>
+              <a href="/" class="divide">Psych Central</a>
+              <a href="/">Bezzy</a>
+            </div>
+          </div>
+          <div class="lg:mt-0 mt-[30px]">
+            <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/07/TRUST-Mark-1.png?" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+</body>
+
+</html>

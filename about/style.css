@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: proxima-nova, sans-serif;
+}
+
+.main {
+  text-align: -webkit-center;
+}
+
+.text-webkit-center {
+  text-align: -webkit-center;
+}
+
+.main a {
+  color: #02838d !important;
+}
+a:hover {
+  color: #02838d
+}
+
+footer a {
+  display: block;
+}
+li::marker{
+  color: #db1f88;
+}
+@media only screen and (min-width: 1024px) {
+  footer .divide:after {
+    display: inline-block;
+    content: '|';
+    margin: 0 1rem;
+    cursor: default;
+  }
+}

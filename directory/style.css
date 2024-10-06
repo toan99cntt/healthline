@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: proxima-nova, sans-serif;
+}
+
+.main {
+  text-align: -webkit-center;
+}
+
+a:hover {
+  color: #02838d;
+}
+
+.node {
+  display: none;
+  color: #db1f88;
+}
+
+.menu-a-z a:hover .node{
+  display: block;
+}
+
+.menu-a-z a:hover {
+  font-weight: bold;
+}
+
+footer a {
+  display: block;
+}
+@media only screen and (min-width: 1024px) {
+  footer .divide:after {
+    display: inline-block;
+    content: '|';
+    margin: 0 1rem;
+    cursor: default;
+  }
+}

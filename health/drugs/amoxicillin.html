@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://use.typekit.net/emv3zbo.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body class="pt-[65px]">
+  <div class="bg-black w-full flex justify-center fixed top-0 left-0 z-[9] px-3 md:px-[47px] leading-[normal]" id="menu-header">
+    <div class="max-w-[1100px] flex-auto ">
+      <div class="justify-between items-center hidden md:flex">
+        <div class="flex-auto text-[20px] gap-[20px] lg:gap-[26px] py-[20px] items-center text-white font-semibold flex">
+          <a class="text-[30px] font-semibold" href="/">
+            healthline
+          </a>
+          <div>Health Conditions <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+          <div>Discover <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+          <div>Plan <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+          <div>Connect <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+        </div>
+        <div class="flex gap-3 text-white items-center font-semibold">
+          <div>SUBSCRIBE</div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div> 
+      </div>
+      <div class="flex justify-between items-center text-white md:hidden py-[15px]">
+        <div class="flex gap-4 text-[23px]">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="flex-auto text-center">
+          <a class="text-[30px] text-white font-semibold" href="/">
+            healthline
+          </a>
+        </div>
+        <div class=" font-semibold">
+          SUBSCRIBE
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-[#eef5f6] text-[#81b9bf] font-semibold overflow-x-auto fixed top-0 w-full hidden" id="menu-hash">
+    <div class="space-x-6 !text-[14px] md:!text-[18px] whitespace-nowrap p-3">
+      <a class="menu-item" href="#what-it-is">What it is</a>
+      <a class="menu-item" href="#side-effects">Side effects</a>
+      <a class="menu-item" href="#dosage">Dosage</a>
+      <a class="menu-item" href="#fa-qs">FAQs</a>
+      <a class="menu-item" href="#uses">Uses</a>
+      <a class="menu-item" href="#what-to-consider">What to consider</a>
+      <a class="menu-item" href="#cost">Cost</a>
+      <a class="menu-item" href="#overdose">Overdose</a>
+      <a class="menu-item" href="#how-to-take">How to take</a>
+      <a class="menu-item" href="#ask-your-doctor">Ask your doctor</a>
+      <a class="menu-item" href="#drug-images">Drug Images</a>
+    </div>
+  </div>
+  <div class="main bg-[#d2e6e8] px-3 md:px-[47px] text-[17px] md:text-[18px]">
+    <div class="md:max-w-[1100px] max-w-[550px] w-full py-6 text-left">
+      <div class="font-semibold text-[34px] md:text-[50px] text-[#c0dcdf] md:text-black">All About Amoxicillin Oral Forms</div>
+      <div class="block lg:flex gap-9">
+        <div class="flex gap-[10px] items-center lg:hidden my-4 pb-3 border-b-[2px] border-[#c0dcdf]">
+          <img
+            class="w-[75px] h-[49px] rounded-[70%] overflow-hidden"
+            src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2024/04/headshot-2022.jpg?w=105&h=105"
+            alt="">
+          <div class="font-semibold text-[14px] md:text-[16px] flex-1 leading-[21px]">
+            <a class="!text-black underline" href="/">Medically reviewed</a> 
+            by 
+            <a class="!text-black underline" href="/">Alex Brewer, PharmD, MBA</a> 
+            — Written by 
+            <a class="!text-black underline" href="/"> Patricia Weiser, PharmD</a>
+            on December 15, 2022
+          </div>
+        </div>
+        <div class="bg-white p-5">
+          <p class="text-[#f0533a] font-semibold">Content</p>
+          <div class="block justify-center space-x-[2px] text-[16px] md:text-[20px]">
+            <a href="#side-effects" class="menu">Side effects</a>
+            <a href="#dosage" class="menu">Dosage</a>
+            <a href="#fa-qs" class="menu">FAQs</a>
+            <a href="#uses" class="menu">Uses</a>
+            <a href="#what-to-consider" class="menu">What to consider</a>
+            <a href="#cost" class="menu">Cost</a>
+            <a href="#overdose" class="menu">Overdose</a>
+            <a href="#how-to-take" class="menu">How to take</a>
+            <a href="#ask-your-doctor" class="menu">Ask your doctor</a>
+            <a href="#drug-images">Drug Images</a>
+          </div>
+        </div>
+        <div class="lg:block hidden max-w-[300px] min-w-[300px]">
+          <div class="flex gap-[10px] items-center pb-6 border-b-[8px] border-black">
+            <img
+              class="w-[75px] h-[49px] rounded-[70%] overflow-hidden"
+              src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2024/04/headshot-2022.jpg?w=105&h=105"
+              alt="">
+            <div class="font-semibold text-[16px] flex-1 leading-[21px]">
+              <a class="!text-black underline" href="/">Medically reviewed</a> 
+              by 
+              <a class="!text-black underline" href="/">Alex Brewer, PharmD, MBA</a> 
+              — Written by 
+              <a class="!text-black underline" href="/"> Patricia Weiser, PharmD</a>
+              on December 15, 2022
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block lg:flex gap-9 mt-6" id="content">
+        <div class="flex-auto space-y-7">
+          <div class="bg-white p-5 section" id="what-it-is">
+            <div class="font-semibold text-[24px] md:text-[38px]">What is amoxicillin?</div>
+            <p class="whitespace-pre-line">
+              If you have a <a href="/">bacterial infection</a>, your doctor may recommend treatment with amoxicillin. It’s a commonly prescribed <a href="/">generic drug</a> that’s used to treat bacterial infections in adults and children.
+
+              Read on to learn more about amoxicillin’s uses, side effects, dosage, and other important information about the drug.
+            </p>
+            <p class="font-semibold text-[20px] md:text-[26px]">Amoxicillin basics</p>
+            <p>Amoxicillin is an oral antibiotic that comes in following forms:</p>
+            <ul class="list-disc pl-[40px] leading-9 mt-[15px]">
+              <li>capsule that you swallow</li>
+              <li>tablet that you swallow</li>
+              <li>chewable tablet</li>
+              <li>powder that’s mixed with water to make a liquid suspension (a kind of liquid mixture) that you swallow</li>
+            </ul>
+            <p class="font-semibold text-[20px] md:text-[26px]">Amoxicillin brand-name versions</p>
+
+            <div class="border-l-[3px] border-[#f05439] p-[20px] mt-[10px] bg-[#f7f7f7] whitespace-pre-line"> 
+              Amoxicillin is a generic drug, which means it’s an exact copy of the active drug in a brand-name medication. The brand-name medication that amoxicillin is based on was called Amoxil. But this brand-name drug is no longer available.
+
+              Generic drugs are thought to be as safe and effective as the brand-name drug they’re based on. In general, generics usually cost less than brand-name drugs.
+
+              If you’d like to know more about generic drugs, talk with your doctor. And explore this Healthline article to learn more about the differences between generic and brand-name drugs.
+            </div>
+          </div>
+
+          <div class="bg-white p-5 space-y-[15px] section" id="side-effects">
+            <div class="font-semibold text-[24px] md:text-[38px]">What are amoxicillin’s side effects?</div>
+            <p class="whitespace-pre-line">
+              Like most drugs, amoxicillin may cause mild or serious side effects. The lists below describe some of the more common side effects that amoxicillin may cause. These lists don’t include all possible side effects.
+
+              Keep in mind that side effects of a drug can depend on:
+            </p>
+            <ul class="list-disc pl-[40px] leading-9 mt-[15px]">
+              <li>your age</li>
+              <li>other health conditions you have</li>
+              <li>other medications you take</li>
+            </ul>
+            <p>Your doctor or pharmacist can tell you more about the potential side effects of amoxicillin. They can also suggest ways to help reduce side effects.</p>
+            <p class="font-semibold text-[20px] md:text-[26px]">Mild side effects</p>
+            <p class="whitespace-pre-line">
+              Here’s a short list of some of the mild side effects that amoxicillin can cause. To learn about other mild side effects, talk with your doctor or pharmacist or read amoxicillin’s prescribing information.
+
+              Mild side effects of amoxicillin that have been reported include:
+            </p>
+            <ul class="list-disc pl-[40px] leading-9 mt-[15px]">
+              <li>
+                digestive side effects, such as
+                <ul class="list-[circle] pl-[40px] leading-9">
+                  <li>diarrhea</li>
+                  <li>diarrhea</li>
+                  <li>diarrhea</li>
+                </ul>
+              </li>
+              <li>trash</li>
+              <li>chewable tablet</li>
+            </ul>
+            <p>Mild side effects of many drugs may go away within a few days to a couple of weeks. But if they become bothersome, talk with your doctor or pharmacist.</p>
+            <p class="text-[14px] italic text-[#231f20]">* To learn more about this side effect, see the “Allergic reaction” section below.</p>
+            <p class="font-semibold text-[20px] md:text-[26px]">Serious side effects</p>
+            <p class="whitespace-pre-line">
+              Serious side effects from amoxicillin can occur, but they aren’t common. If you have serious side effects from amoxicillin, call your doctor right away. But if you think you’re having a medical emergency, call 911 or your local emergency number.
+
+              Serious side effects of amoxicillin that have been reported include:
+            </p>
+            <ul class="list-disc pl-[40px] leading-9 mt-[15px]">
+              <li>
+                diarrhea caused by <a href="">Clostridioides difficile</a> (commonly called C. diff), which may occur more than 2 months after taking amoxicillin
+              </li>
+              <li>other bacterial or fungal superinfection (an infection occurring after or in addition to an earlier infection)</li>
+              <li>severe <a href="">allergic reaction</a>*</li>
+            </ul>
+            <p class="text-[14px] italic text-[#231f20]">* To learn more about this side effect, see the “Allergic reaction” section below.</p>
+            <div class="border-l-[3px] border-[#f05439] p-[20px] bg-[#f7f7f7] whitespace-pre-line"> 
+              <p class="font-semibold text-[18px] text-[#f05439]">Allergic reaction</p>
+              Some people may have an <a href="">allergic reaction</a> to amoxicillin.
+
+              Symptoms of a mild allergic reaction can include:
+              <ul class="list-[circle] pl-[40px] leading-[normal]">
+                <li><a href="">skin rash</a></li>
+                <li><a href="">itchiness</a></li>
+                <li><a href="">flushing</a>(temporary warmth, redness, or deepening of skin color)</li>
+              </ul>
+              A more severe allergic reaction is rare but possible. Symptoms of a severe allergic reaction can include swelling under your skin, usually in your eyelids, lips, hands, or feet. They can also include swelling of your tongue, mouth, or throat, which can cause trouble breathing.
+
+              Call your doctor right away if you have an allergic reaction to amoxicillin. But if you think you’re having a medical emergency, call 911 or your local emergency number.
+            </div>
+          </div>
+
+          <div class="bg-white p-5 space-y-[15px] section" id="dosage">
+            <div class="font-semibold text-[24px] md:text-[38px]">What is amoxicillin’s dosage?</div>
+            <div class="whitespace-pre-line">
+              Your doctor will recommend the dosage of amoxicillin that’s right for you. Below are commonly used dosages, but <strong>always take the dosage your doctor prescribes.</strong>
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Forms and strengths</p>
+              Amoxicillin comes in four forms:
+              <ul class="list-disc pl-[40px] leading-9 mt-[15px] whitespace-normal">
+                <li>oral capsule that you swallow</li>
+                <li>oral tablet that you swallow</li>
+                <li>tablet that you chew</li>
+                <li>powder that’s mixed with water to make a liquid suspension (a kind of liquid mixture)</li>
+              </ul>
+              Amoxicillin suspension is usually a pink liquid. It often has a bubble gum or fruity flavor. But the drug may also come in other colors or flavors, depending on the drugmaker.
+
+              If you have questions about the drug’s appearance or flavor, talk with your pharmacist. At some pharmacies, pharmacists can change the flavor of liquid medications, which may make it easier for a child to take.
+
+              The chart below lists the strengths amoxicillin comes in.
+            </div>
+            <table class="whitespace-pre-line border-collapse w-full">
+              <tr>
+                <th>Form of amoxicillin</th>
+                <th>Strengths</th>
+              </tr>
+              <tr>
+                <td>oral capsule</td>
+                <td>• 250 milligrams (mg)
+                  • 500 mg
+                </td>
+              </tr>
+              <tr>
+                <td>oral tablet</td>
+                <td>• 500 mg
+                  • 875 mg
+                </td>
+              </tr>
+              <tr>
+                <td>chewable tablet</td>
+                <td>• 125 mg
+                  • 250 mg
+                </td>
+              </tr>
+              <tr>
+                <td>liquid suspension</td>
+                <td>• 125 mg per 5 milliliters (mg/mL)
+                  • 200 mg/5 mL
+                  • 250 mg/5 mL
+                  • 400 mg/5 mL
+                </td>
+              </tr>
+            </table>
+            <div class="whitespace-pre-line">
+              <p class="font-semibold text-[20px] md:text-[26px]">Recommended dosages</p>
+              The dosage of amoxicillin your doctor prescribes depends on several factors. Examples of these factors include the kind of infection you have and how severe it is.
+
+              You’ll take a dose of amoxicillin once every 8 hours or 12 hours. If you take the drug twice per day, you’ll take one dose every 12 hours. If your doctor prescribes the drug three times per day, you’ll take one dose approximately every 8 hours.
+
+              Amoxicillin is usually taken for 10 days to 14 days. But certain kinds of infections only require a single dose of amoxicillin. Others require longer treatment periods.
+
+              Be sure to take all of your prescribed doses, even if you start feeling better. Stopping antibiotics too early may mean your infection isn’t treated completely. This could raise your risk of the bacteria becoming resistant to antibiotics.
+
+              Your doctor can tell you more about the dosage of amoxicillin that’s right for you. And to learn more about amoxicillin’s dosage, see this article.
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Questions about amoxicillin’s dosage</p>
+              Below are some common questions about amoxicillin’s dosage.
+              <ul class="list-disc pl-[40px] leading-9 whitespace-normal mt-[15px]">
+                <li>
+                  <strong> What if I miss a dose of amoxicillin?</strong> If you miss a dose of amoxicillin, take it as soon as you remember. But if it’s almost time for your next dose, just skip the missed dose and take your next dose at its regular time.
+                </li>
+                <li>
+                  <strong>Will I need to take amoxicillin long term?</strong> It’s not likely. Amoxicillin is an antibiotic drug that’s usually taken short term to treat certain bacterial infections.
+                </li>
+                <li>
+                  <strong>How long does amoxicillin take to work?</strong> Amoxicillin starts working right way to kill certain kinds of bacteria. But it may take at least 2 days to 3 days of treatment before your symptoms are eased.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white p-5 space-y-[15px] section" id="fa-qs">
+            <div class="font-semibold text-[24px] md:text-[38px]">What are some frequently asked questions about amoxicillin?</div>
+            <div class="whitespace-pre-line">
+              Find answers to some commonly asked questions about amoxicillin.
+
+              <p class="font-semibold text-[20px] md:text-[26px]">How is amoxicillin different from the combination drug amoxicillin/clavulanate?</p>
+              Amoxicillin/clavulanate (<a href="/">Augmentin</a>) is not the same as amoxicillin. Amoxicillin/clavulanate contains amoxicillin, but it also contains a second active ingredient, clavulanate. (An active ingredient is what makes a drug work.) These two active ingredients work together to kill various kinds of bacteria.
+
+              These drugs have some of the same uses, but also others that vary. For example, both drugs treat acute bacterial <a href="/">sinusitis</a> (a short-term sinus infection caused by bacteria). But only amoxicillin is usually prescribed as part of a combination treatment for Helicobacter pylori. (This is a kind of bacteria that can infect your digestive tract and cause ulcers.)
+
+              If you have other questions about how amoxicillin compares with amoxicillin/clavulanate, talk with your doctor or pharmacist.
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Is amoxicillin an antibiotic?</p>
+              Yes, amoxicillin is an a<a href="/">antibiotic</a>. Specifically, amoxicillin belongs to a group of drugs called beta-lactam antibiotics. Examples of other drugs in this group are <a href="/">penicillin</a> and <a href="/">ampicillin</a>.
+
+              Amoxicillin is considered a broad-spectrum antibiotic. It’s used to treat infections caused by a wide variety of bacteria.
+
+              If you have questions about how amoxicillin works, talk with your doctor or pharmacist.
+
+              <p class="font-semibold text-[20px] md:text-[26px]">How does amoxicillin compare with penicillin and azithromycin?</p>
+              Amoxicillin, penicillin, and azithromycin are all antibiotic drugs that treat a variety of bacterial infections.
+
+              Amoxicillin and penicillin belong to a group of drugs called beta-lactam antibiotics. People who’ve had an allergic reaction to penicillin may have the same reaction to amoxicillin.
+
+              Azithromycin (Zithromax) is not in the same group of drugs as penicillin and amoxicillin. Azithromycin belongs to a group of drugs called macrolide antibiotics.
+
+              If you have questions about which antibiotic is right for you, talk with your doctor.
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Does amoxicillin cause hives?</p>
+              It’s possible. This side effect wasn’t seen in amoxicillin’s <a href="/">studies</a>, but <a href="/">hives</a> have been reported in people taking amoxicillin after the drug became available for use.
+
+              Hives are often a symptom of an allergic reaction. If you develop hives while taking amoxicillin, talk with your doctor right away. They’ll likely have you stop taking the drug. They may have you switch to a different antibiotic to treat your infection. In addition, your doctor may recommend treating your hives with an <a href="/">antihistamine</a> you swallow, such as diphenhydramine (Benadryl).
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Does amoxicillin expire?</p>
+              Yes, amoxicillin does expire. How long amoxicillin remains safe to take depends on several factors, such as the form you take. If you’re prescribed amoxicillin capsules or tablets, your pharmacist will add an expiration date to the label on the packaging. This is usually 1 year from the date they dispensed the medication. You should discard any unused medication after this date.
+
+              If you’re prescribed the liquid suspension form, your pharmacist will add water to the bottle of powder and mix it into a suspension. The suspension expires 14 days after the date it’s mixed. You should discard any unused portion of the suspension after this timeframe.
+
+              If you have questions about storing or discarding medication, talk with your pharmacist.
+            </div>
+          </div>
+
+          <div class="bg-white p-5 space-y-[15px] section" id="uses">
+            <div class="font-semibold text-[24px] md:text-[38px]">What is amoxicillin used for?</div>
+            <div class="whitespace-pre-line">
+              Amoxicillin is used to treat certain kinds of bacterial infections.
+
+              Amoxicillin works by attaching to a specific protein on certain kinds of bacterial cells. This causes the cell’s walls to break apart, killing the bacteria.
+
+              Amoxicillin is used to treat:
+              <ul class="list-disc pl-[40px] leading-9 mt-[15px] whitespace-normal">
+                <li>
+                  bacterial infections, including:
+                  <ul class="list-[circle] pl-[40px] leading-9">
+                    <li>ear, nose, or throat infections, such as strep throat and sinus infection</li>
+                    <li>genitourinary tract infections, such as urinary tract infection (UTI) and gonorrhea (a sexually transmitted infection)</li>
+                    <li>lower respiratory tract infections, such as pneumonia and bronchitis</li>
+                  </ul>
+                </li>
+                <li><a href="/">skin infections</a></li>
+                <li><a href="/">Helicobacter pylori</a> (a kind of bacteria that can infect your digestive tract and cause ulcers)*</li>
+              </ul>
+              The uses listed above are approved by the Food and Drug Administration (FDA). Doctors may also prescribe amoxicillin off-label for other uses, such as tooth infections. (With off-label use, doctors prescribe a drug for a purpose other than what it’s approved for.)
+
+              Amoxicillin is also commonly prescribed off-label for use before dental procedures to help prevent endocarditis in people with certain heart conditions. (With endocarditis, you have severe inflammation of the inside lining of the heart. The condition may be caused by a bacterial infection.)
+
+              <p class="text-[14px] italic text-[#231f20]">* For this use, amoxicillin is prescribed together with one or two other drugs.</p>
+            </div>
+          </div>
+
+          <div class="bg-white p-5 space-y-[15px] section" id="what-to-consider">
+            <div class="font-semibold text-[24px] md:text-[38px]">What should be considered before taking amoxicillin?</div>
+            <div class="whitespace-pre-line">
+              Some important things to discuss with your doctor when considering treatment with amoxicillin include:
+              <ul class="list-disc pl-[40px] leading-9 mt-[15px] whitespace-normal">
+                <li>your overall health</li>
+                <li>any medical conditions you may have</li>
+                <li>other medications you take</li>
+              </ul>
+              These and other considerations to discuss with your doctor are described below.
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Interactions</p>
+              Taking a medication with certain vaccines, foods, and other things can affect how the medication works. These effects are called interactions.
+
+              Before taking amoxicillin, be sure to tell your doctor about all medications you take (including prescription and over-the-counter kinds). Also, describe any vitamins, herbs, or supplements you use. Your doctor or pharmacist can tell you about any interactions these items may cause with amoxicillin.
+
+              For information about drug-condition interactions, see the “Warnings” section below.
+
+              <p class="font-semibold text-[22px]">Interactions with drugs or supplements</p>
+              Amoxicillin can interact with several kinds of drugs. These drugs include:
+              <ul class="list-disc pl-[40px] leading-9 mt-[15px] whitespace-normal">
+                <li>blood thinners such as warfarin (Coumadin)</li>
+                <li>the gout drugs probenecid (Probalan) and allopurinol (Zyloprim)</li>
+                <li>certain other antibiotics</li>
+              </ul>
+              This list does not contain all kinds of drugs that may interact with amoxicillin. Your doctor or pharmacist can tell you more about these interactions and any others that may occur with amoxicillin.
+
+              <p class="font-semibold text-[22px]">Other interactions</p>
+              Taking amoxicillin may cause a false-positive result on urine glucose (sugar) tests. (A false-positive means the test shows glucose in your urine, even though it isn’t actually there). If you have questions about monitoring your urine glucose level while taking amoxicillin, talk with your doctor.
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Warnings</p>
+              Amoxicillin can sometimes cause harmful effects in people who have certain conditions. This is known as a drug-condition interaction. Other factors may also affect whether amoxicillin is a good treatment option for you.
+
+              Talk with your doctor about your health history before you take amoxicillin. Factors to consider include those described below.
+
+              <strong>Mononucleosis</strong>. Amoxicillin may cause a skin rash. If you have mononucleosis (mono), you have a higher risk of developing a rash while taking amoxicillin. Talk with your doctor about other treatment options, as they likely won’t prescribe amoxicillin if you have mono.
+
+              <strong>Severe kidney problems</strong>. If you have severe kidney problems, such as chronic kidney disease, talk with your doctor before taking amoxicillin. Depending on your kidney function, your doctor may prescribe a lower dosage of the drug for you. Or, in some cases, they may recommend a different treatment option.
+
+              <strong>Allergic reaction</strong>. If you’ve had an allergic reaction to other beta-lactam antibiotics such as penicillin, or amoxicillin or any of its ingredients, your doctor will likely not prescribe amoxicillin. Ask them what other medications are better options for you.
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Amoxicillin and alcohol</p>
+              Amoxicillin doesn’t interact with alcohol. But your doctor may still recommend that you limit alcohol consumption while taking amoxicillin. This is because amoxicillin may cause digestive side effects, such as nausea, vomiting, and diarrhea. Drinking alcohol can also cause these side effects.
+
+              Drinking alcohol during treatment with amoxicillin could raise your risk of digestive side effects, or it could make any digestive side effects that you experience more severe.
+
+              If you have questions about how much alcohol is safe to drink while you’re taking amoxicillin, talk with your doctor or pharmacist.
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Pregnancy and breastfeeding</p>
+              Doctors commonly prescribe amoxicillin to people who are pregnant. The drug is generally considered safe to take during pregnancy.
+
+              Amoxicillin passes into breast milk in small amounts. Since the drug became available for use, some people who took amoxicillin while breastfeeding have reportedTrusted Source mild side effects in their child who is breastfed. These included rash, diarrhea, and thrush.
+
+              If you have questions about taking amoxicillin while pregnant or breastfeeding, talk with your doctor.
+            </div>
+          </div>
+
+          <div class="bg-white p-5 space-y-[15px] section" id="cost">
+            <div class="font-semibold text-[24px] md:text-[38px]">What does amoxicillin cost?</div>
+            <div class="whitespace-pre-line">
+              Costs of prescription drugs can vary depending on many factors. These factors include your insurance coverage (if you have it) and which pharmacy you use.
+
+              Financial assistance to help you pay for amoxicillin may be available. Medicine Assistance Tool and NeedyMeds are two websites that provide resources to help reduce the cost of amoxicillin.
+
+              These websites also offer tools to help you find low cost healthcare and certain educational resources. To learn more, visit their websites.
+            </div>
+          </div>
+
+          <div class="bg-white p-5 space-y-[15px] section" id="overdose">
+            <div class="font-semibold text-[24px] md:text-[38px]">What should be done in case of overdose?</div>
+            <div class="whitespace-pre-line">
+              Do not take more amoxicillin than your doctor prescribes. Taking more than this can lead to serious side effects.
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Symptoms of overdose</p>
+              An overdose of amoxicillin may cause kidney failure. Symptoms of kidney problems can include:
+              <ul class="list-disc pl-[40px] leading-9 mt-[15px] whitespace-normal">
+                <li>urinating less than usual</li>
+                <li>swelling in your lower legs or any part of your body</li>
+                <li>confusion</li>
+                <li>shortness of breath</li>
+                <li>fatigue (low energy)</li>
+              </ul>
+              <p class="font-semibold text-[20px] md:text-[26px]">What to do in case you take too much amoxicillin</p>
+              Call your doctor if you think you’ve taken too much amoxicillin. You can also call 800-222-1222 to reach the American Association of Poison Control Centers or use its online resource. <strong>But if you have severe symptoms, immediately call 911 or your local emergency number. Or go to the nearest emergency room.</strong>
+            </div>
+          </div>
+
+          <div class="bg-white p-5 space-y-[15px] section" id="how-to-take">
+            <div class="font-semibold text-[24px] md:text-[38px]">How is amoxicillin taken?</div>
+            <div class="whitespace-pre-line">
+              Your doctor will explain how you should take amoxicillin. They’ll also explain how much to take and how often. Be sure to follow your doctor’s instructions.
+
+              Amoxicillin comes in four forms:
+              <ul class="list-disc pl-[40px] leading-9 mt-[15px] whitespace-normal">
+                <li>oral capsule that you swallow</li>
+                <li>oral tablet that you swallow</li>
+                <li>tablet that you chew</li>
+                <li>powder that’s mixed* with water to make a liquid suspension (a kind of liquid mixture)</li>
+              </ul>
+              Amoxicillin suspension is usually a pink liquid. It often has a bubble gum or fruity flavor. But the drug may also come in other colors or flavors, depending on the drugmaker.
+
+              If you have questions about the drug’s appearance or flavor, talk with your pharmacist. At some pharmacies, pharmacists can change the flavor of liquid medications, which may make it easier for your child to take.
+
+              Be sure to finish all of the amoxicillin you’re prescribed, even if you start to feel better. Not finishing a course of an antibiotic may cause your infection to worsen or return. It may also raise your risk of the bacteria becoming resistant to antibiotics.
+
+              <p class="text-[14px] italic text-[#231f20]">* A pharmacist or another healthcare professional will mix the medication before they dispense it to you. You won’t have to add water or mix the drug yourself.</p>
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Taking amoxicillin</p>
+              The instructions for taking amoxicillin depend on the form you’re prescribed:
+
+              <ul class="list-disc pl-[40px] leading-9 mt-[15px] whitespace-normal">
+                <li><strong>Oral capsule and oral tablet.</strong> Swallow whole.</li>
+                <li><strong>Chewable tablets.</strong> Chew or crush thoroughly before swallowing.</li>
+                <li><strong>Liquid suspension.</strong> Swallow by itself or mix it into fruit juice, water, ginger ale, milk (or for babies, formula), or another cold drink. If you mix the amoxicillin suspension into one of these liquids, drink the entire amount right away after mixing it.</li>
+              </ul>
+              Be sure to shake the amoxicillin liquid suspension before each use. You should use an oral syringe or a medicine cup to measure your dose accurately.
+
+              All forms of amoxicillin can be stored at room temperature. The liquid suspension can also be stored in the refrigerator. This isn’t required, but refrigeration may help improve the taste of the suspension.
+
+              Accessible medication containers and labels
+              If it’s hard for you to read the label on your prescription, tell your doctor or pharmacist. Certain pharmacies provide medication labels that:
+              <ul class="list-disc pl-[40px] leading-9 mt-[15px] whitespace-normal">
+                <li>have large print</li>
+                <li>use braille</li>
+                <li>contain a code you can scan with a smartphone to change the text to audio</li>
+                <li>powder that’s mixed* with water to make a liquid suspension (a kind of liquid mixture)</li>
+              </ul>
+              Your doctor or pharmacist may be able to recommend a pharmacy that offers these options if your current pharmacy doesn’t.
+
+              Also, if you’re having trouble opening your medication bottles, let your pharmacist know. They may be able to put amoxicillin in an easy-open container. Your pharmacist may also recommend tools to help make it simpler to open the drug’s container.
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Taking amoxicillin with other drugs</p>
+              Amoxicillin is used with other drugs to treat Helicobacter pylori (a kind of bacteria that can infect your digestive tract and cause ulcers). For this use, amoxicillin is usually prescribed along with clarithromycin and lansoprazole (Prevacid).
+
+              <p class="font-semibold text-[20px] md:text-[26px]">Questions about taking amoxicillin</p>
+              Below are some common questions about taking amoxicillin.
+              <ul class="list-disc pl-[40px] leading-9 mt-[15px] whitespace-normal">
+                <li><strong>Can amoxicillin be chewed, crushed, or split?</strong> Amoxicillin oral capsules and oral tablets should be swallowed whole. Amoxicillin chewable tablets should be chewed or crushed thoroughly before swallowing. With the liquid suspension, you have two options. You can either swallow your dose or you can mix it into milk, fruit juice, water, ginger ale, or another cold drink. A child’s dose of suspension may also be mixed into formula. If mixing the suspension into one of these liquids, drink the entire amount right away after mixing it.</li>
+                <li><strong>Should I take amoxicillin with food?</strong> You can take amoxicillin with food or on an empty stomach. Taking amoxicillin with food may help prevent or reduce digestive side effects, such as nausea.</li>
+                <li><strong>Is there a best time of day to take amoxicillin?</strong> No, but the spacing of amoxicillin doses is important if you take multiple doses per day. Usually, amoxicillin doses are taken at least 8 to 12 hours apart. If you take two doses per day, you’ll take one dose approximately every 12 hours. If your doctor prescribes amoxicillin three times per day, you’ll take one dose approximately every 8 hours.</li>
+              </ul>
+              <div class="border-l-[3px] border-[#f05439] p-[20px] bg-[#f7f7f7] whitespace-pre-line"> 
+                <p class="font-semibold text-[#f05439] uppercase">Questions for your doctor</p>
+                You may have questions about amoxicillin and your treatment plan. It’s important to discuss all your concerns with your doctor.
+
+                Here are a few tips that might help guide your discussion:
+                <ul class="list-disc pl-[40px] leading-9 mt-[15px] whitespace-normal">
+                  <li>
+                    Before your appointment, write down questions such as:
+                    <ul class="list-[circle] pl-[40px] leading-9">
+                      <li>How will amoxicillin affect my body, mood, or lifestyle?</li>
+                    </ul>
+                  </li>
+                  <li>Bring someone with you to your appointment if doing so will help you feel more comfortable.</li>
+                  <li>If you don’t understand something related to your condition or treatment, ask your doctor to explain it to you.</li>
+                </ul>
+                Remember, your doctor and other healthcare professionals are available to help you. And they want you to get the best care possible. So don’t be afraid to ask questions or offer feedback on your treatment.
+              </div>
+
+            </div>
+          </div>
+
+          <div class="bg-white p-5 section" id="ask-your-doctor">
+            <div class="font-semibold text-[24px] md:text-[38px]">What to ask your doctor</div>
+            <div class="whitespace-pre-line">
+              If you have a certain kind of bacterial infection, your doctor may recommend amoxicillin. It’s a commonly prescribed antibiotic drug.
+
+              Before taking amoxicillin to treat an infection, talk with your doctor about what you can expect from treatment. Questions to consider asking include:
+              <ul class="list-disc pl-[40px] leading-9 mt-[15px] whitespace-normal">
+                <li>Can my infection pass to others even though I’m taking amoxicillin?</li>
+                <li>How many days should I take amoxicillin?</li>
+                <li>What could happen if I don’t finish my entire course of this antibiotic?</li>
+                <li>If I have side effects that cause me to stop taking amoxicillin, how will you treat my infection?</li>
+              </ul>
+              To learn more about amoxicillin, see this article:
+              <ul class="list-disc pl-[40px] leading-9 mt-[15px] whitespace-normal">
+                <li><a href="/">Amoxicillin and Cost: What You Need to Know</a></li>
+              </ul>
+              To get information on different conditions and tips for improving your health, subscribe to any of Healthline’s newsletters. You may also want to check out the online communities at Bezzy. It’s a place where people with certain conditions can find support and connect with others.
+
+              <strong>Disclaimer:</strong> Healthline has made every effort to make certain that all information is factually correct, comprehensive, and up to date. However, this article should not be used as a substitute for the knowledge and expertise of a licensed healthcare professional. You should always consult your doctor or another healthcare professional before taking any medication. The drug information contained herein is subject to change and is not intended to cover all possible uses, directions, precautions, warnings, drug interactions, allergic reactions, or adverse effects. The absence of warnings or other information for a given drug does not indicate that the drug or drug combination is safe, effective, or appropriate for all patients or all specific uses.
+            </div>
+          </div>
+
+          <div class="bg-white p-5 space-y-[15px] section" id="drug-images">
+            <div class="font-semibold text-[24px] md:text-[38px]">Amoxicillin Images</div>
+            <div class="relative flex justify-center cursor-pointer" id="openPopup">
+              <div class="w-full max-w-[460px]">
+                <img width="100%" src="https://media.post.rvohealth.io/2U4nNZEf7jt4s7fWZRWXPcYsXyz/2023/08/23/2UMjSPkwwxIBi5sEUWiwRBqQrWf.jpg" alt="">
+              </div>
+              <div class="bg-[#000000bf] rounded-sm text-white uppercase absolute bottom-3 right-10 p-3 text-[14px] flex justify-center items-center gap-3">
+                View Gallery
+                <span class="relative">
+                  <i class="fa-regular text-[35px] fa-folder"></i>
+                  <span class="absolute top-2 right-2">94</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-[15px]">
+            <div class="flex justify-between items-center text-[#767474]">
+              <div><span>-</span>3 sources</div>
+              <div class="flex gap-10 items-center">
+                <div class=" text-[20px] flex gap-3">
+                  <i class="fa-solid fa-print"></i>
+                  <i class="fa-solid fa-envelope"></i>
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-pinterest-p"></i>
+                  <i class="fa-brands fa-reddit-alien"></i>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <span class="uppercase text-[12px]">Feedback</span>
+                  <span>
+                    <i class="fa-regular fa-face-smile"></i>
+                    <i class="fa-regular fa-face-frown"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <p class="text-[#767474] text-[14px]">Healthline has strict sourcing guidelines and relies on peer-reviewed studies, academic research institutions, and medical journals and associations. We only use quality, credible sources to ensure content accuracy and integrity. You can learn more about how we ensure our content is accurate and current by reading our editorial policy.</p>
+            <ul class="list-disc pl-[40px] leading-7 mt-[15px] text-[14px] space-y-3">
+              <li>
+                <p>Akhavan BJ, et al. (2022). Amoxicillin.</p>
+                <a href="">https://www.ncbi.nlm.nih.gov/books/NBK482250/</a>
+              </li>
+              <li>
+                <p>Akhavan BJ, et al. (2022). Amoxicillin.</p>
+                <a href="">https://www.ncbi.nlm.nih.gov/books/NBK482250/</a>
+              </li>
+              <li>
+                <p>Akhavan BJ, et al. (2022). Amoxicillin.</p>
+                <a href="">https://www.ncbi.nlm.nih.gov/books/NBK482250/</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="max-w-[300px] min-w-[300px]">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main px-3 md:px-[47px] text-[17px] md:text-[18px]">
+    <div class="md:max-w-[1100px] max-w-[550px] w-full py-6 text-left">
+      <div class="uppercase font-semibold">Read this next</div>
+      <div class="block lg:flex gap-9 mt-6">
+        <div class="flex-1">
+          <div class="pt-[20px] pb-[30px] border-b-[6px] border-[#f7f7f7] block md:flex gap-6">
+            <div class="md:max-w-[200px]">
+              <img src="https://media.post.rvohealth.io/wp-content/uploads/2022/07/female-looking-out-window-with-reflection-732-549-feature-thumb.jpg" alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <a class="!text-black text-[30px] md:text-[24px] md:text-[38px] font-semibold" href="/">Mental Wellness While Living with Breast Cancer</a>
+              <div class="flex gap-4">
+                <div class="max-w-[35px] rounded-[50%] overflow-hidden">
+                  <img width="100%" src="https://media.post.rvohealth.io/wp-content/uploads/2022/01/Debra-Rose-500x500-Bio.png" alt="">
+                </div>
+                <p class="flex-1 text-[14px]">Medically reviewed by <a class="font-semibold underline !text-black" href="/">Debra Rose Wilson, Ph.D., MSN, R.N., IBCLC, AHN-BC, CHT</a></p>
+              </div>
+              <p class="line-clamp-2">Take this quiz to see how you’re managing the emotional aspects of breast cancer, along with resources to support your mental</p>
+              <p class="uppercase text-[#02838d] text-[16px]">Read more <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+          </div>
+          <div class="pt-[20px] pb-[30px] border-b-[6px] border-[#f7f7f7] block md:flex gap-6">
+            <div class="md:max-w-[200px]">
+              <img src="https://media.post.rvohealth.io/wp-content/uploads/2022/07/female-looking-out-window-with-reflection-732-549-feature-thumb.jpg" alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <a class="!text-black text-[30px] md:text-[24px] md:text-[38px] font-semibold" href="/">Mental Wellness While Living with Breast Cancer</a>
+              <div class="flex gap-4">
+                <div class="max-w-[35px] rounded-[50%] overflow-hidden">
+                  <img width="100%" src="https://media.post.rvohealth.io/wp-content/uploads/2022/01/Debra-Rose-500x500-Bio.png" alt="">
+                </div>
+                <p class="flex-1 text-[14px]">Medically reviewed by <a class="font-semibold underline !text-black" href="/">Debra Rose Wilson, Ph.D., MSN, R.N., IBCLC, AHN-BC, CHT</a></p>
+              </div>
+              <p class="line-clamp-2">Take this quiz to see how you’re managing the emotional aspects of breast cancer, along with resources to support your mental</p>
+              <p class="uppercase text-[#02838d] text-[16px]">Read more <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+          </div>
+          <div class="pt-[20px] pb-[30px] border-b-[6px] border-[#f7f7f7] block md:flex gap-6">
+            <div class="md:max-w-[200px]">
+              <img src="https://media.post.rvohealth.io/wp-content/uploads/2022/07/female-looking-out-window-with-reflection-732-549-feature-thumb.jpg" alt="">
+            </div>
+            <div class="space-y-[10px]">
+              <a class="!text-black text-[30px] md:text-[24px] md:text-[38px] font-semibold" href="/">Mental Wellness While Living with Breast Cancer</a>
+              <div class="flex gap-4">
+                <div class="max-w-[35px] rounded-[50%] overflow-hidden">
+                  <img width="100%" src="https://media.post.rvohealth.io/wp-content/uploads/2022/01/Debra-Rose-500x500-Bio.png" alt="">
+                </div>
+                <p class="flex-1 text-[14px]">Medically reviewed by <a class="font-semibold underline !text-black" href="/">Debra Rose Wilson, Ph.D., MSN, R.N., IBCLC, AHN-BC, CHT</a></p>
+              </div>
+              <p class="line-clamp-2">Take this quiz to see how you’re managing the emotional aspects of breast cancer, along with resources to support your mental</p>
+              <p class="uppercase text-[#02838d] text-[16px]">Read more <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-[300px] min-w-[300px]"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="fullscreenPopup" class="fixed text-left hidden inset-0 bg-black bg-opacity-75 items-center top-0 justify-center z-[999]">
+    <div class="bg-white rounded-lg p-3 shadow-lg w-full h-full space-y-3">
+      <div class="flex justify-between items-center border-b-[1px] border-[#dddd] pb-2">
+        <div class="flex items-center gap-8">
+          <span class="text-[20px] md:text-[26px] border-r-[1px] border-[#dddd] pr-8">
+            1/94
+          </span>
+          <span class="font-semibold text-[24px] md:text-[38px]">
+            Amoxicillin Images
+          </span>
+        </div>
+        <span id="closePopup" class="text-gray-700 text-2xl cursor-pointer px-3">&times;</span>
+      </div>
+      <div class="px-[100px]">
+        <div class="max-w-[750px] flex justify-center bg-[#f7f7f7]">
+          <img class="max-w-[350px]" width="100%" src="https://media.post.rvohealth.io/2U4nNZEf7jt4s7fWZRWXPcYsXyz/2023/08/23/2UMjSPkwwxIBi5sEUWiwRBqQrWf.jpg" alt="">
+        </div>
+        <p class="text-[20px] md:text-[26px] font-semibold uppercase pb-2 border-b-[1px] border-[#dddd]">AMOXICILLIN 500 MG TABLET</p>
+        <li>Form: tablet</li>
+        <li>Color: off-white</li>
+        <li>Shape: oblong</li>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="bg-[#fbf5ed] text-[14px] py-[40px] md:px-[47px] text-webkit-center">
+      <div class="md:max-w-[1100px] max-w-[550px] w-full py-6 px-[10px]">
+        <div class="inline lg:flex gap-[55px] lg:space-y-2 space-y-[30px] items-center mb-[20px] lg:mb-[60px]">
+          <a href="/" class="lg:w-[191px] flex w-full justify-center lg:justify-start">
+            <img width="191px" src="https://s3-us-west-2.amazonaws.com/healthline-prod-next/content/hl-black.svg
+            " alt="">
+          </a>
+          <div class="flex gap-5 text-[19px] justify-center lg:justify-start">
+            <a href="/">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-flipboard"></i>
+            </a>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-5">
+          <div class="justify-self-center lg:justify-self-start lg:max-w-[100%] max-w-[550px]">
+            <div class="space-y-[15px] lg:text-left text-center">
+              <div class="text-[20px] md:text-[26px] font-semibold">Get our wellness newsletter</div>
+              <div>Filter out the noise and nurture your inbox with health and wellness advice that’s inclusive and
+                rooted
+                in medical expertise.</div>
+              <div class="flex lg:justify-start justify-center">
+                <input type="text" class="w-[215px] px-[10px]" placeholder="Enter your email">
+                <div
+                  class="uppercase w-[150px] h-[50px] text-center text-white bg-[#02838d] hover:bg-[#db1f88] content-center font-semibold">
+                  Sign up</div>
+              </div>
+              <div class="text-black text-[14px]">
+                Your <a href="/" class="inline">privacy</a> is important to us
+              </div>
+            </div>
+          </div>
+          <div class="justify-self-center lg:justify-self-start space-y-[20px]">
+            <div class="flex text-left font-semibold gap-5 lg:max-w-[100%] max-w-[550px] justify-center lg:justify-start">
+              <div class="space-y-[10px] w-full max-w-[150px]">
+                <a href="/">About Us</a>
+                <a href="/">Contact Us</a>
+                <a href="/">Privacy Policy</a>
+                <a href="/">Privacy Settings</a>
+                <a href="/">Advertising Policy</a>
+                <a href="/">Health Topics</a>
+              </div>
+              <div class="space-y-[10px]">
+                <a href="/">Sitemap</a>
+                <a href="/">Medical Affairs</a>
+                <a href="/">Content Integrity</a>
+                <a href="/">Newsletters</a>
+                <div class="hidden lg:block">© 2024 Healthline Media LLC. All rights reserved. Healthline Media is an
+                  RVO
+                  Health Company. Our website services, content, and products are for informational purposes only.
+                  Healthline Media does not provide medical advice, diagnosis, or treatment. See additional information.
+                </div>
+              </div>
+            </div>
+            <div class="lg:hidden block max-w-[550px]">© 2024 Healthline Media LLC. All rights reserved. Healthline
+              Media
+              is an RVO Health Company. Our website services, content, and products are for informational purposes only.
+              Healthline Media does not provide medical advice, diagnosis, or treatment. See additional information.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-[14px] md:px-[47px] text-webkit-center text-white">
+      <div class="md:max-w-[1100px] max-w-[550px] w-full py-6 px-[10px] block lg:flex gap-[40px]">
+        <div>
+          <a href="/">
+            <svg alt="Healthline Media" width="132" height="50" class="css-11hc4ky" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 132 50">
+              <path fill="#FFF"
+                d="M30.477 38.313v9.62h3.98V50h-6.36V38.313h2.38zm11.137 0v2.068h-2.548V50h-2.308v-9.62h-2.565v-2.067h7.421zm3.645 0v4.643h3.826v-4.643h2.337V50h-2.337v-4.976h-3.826V50h-2.32V38.313h2.32zm10.4 0v9.62h3.98V50h-6.362V38.313h2.381zm7.69 0V50h-2.12V38.313h2.12zm4.48 0 3.798 7.149v-7.149h2.325V50h-2.22l-3.955-7.447V50H65.47V38.313h2.359zm14.605 0v2.05h-4.13v2.681h4.013v2.032h-4.013v2.874h4.13V50h-6.362V38.313h6.362zm8.654 0 2.213 7.009 2.23-7.009h3.071V50h-2.264v-8.025L93.764 50h-.943l-2.54-8.025V50H88V38.313h3.088zm15.996 0v2.05h-4.13v2.681h4.014v2.032h-4.014v2.874h4.13V50h-6.361V38.313h6.361zm-104.764 0v4.643h3.825v-4.643h2.337V50H6.145v-4.976H2.32V50H0V38.313h2.32zm14.644 0v2.05h-4.13v2.681h4.013v2.032h-4.013v2.874h4.13V50h-6.362V38.313h6.362zm104.434 0V50h-2.12V38.313h2.12zm7.216-.065L132 49.935h-2.377l-.53-2.085h-3.728l-.53 2.085h-2.377l3.386-11.687h2.77zm-16.063 0c1.008 0 1.878.246 2.612.736.733.49 1.293 1.18 1.68 2.068.386.888.579 1.904.579 3.049 0 1.144-.19 2.158-.571 3.04-.381.882-.938 1.568-1.671 2.058-.734.49-1.61.736-2.629.736h-3.611V38.248h3.611zm-88.636 0 3.386 11.687h-2.377l-.53-2.085h-3.728l-.53 2.085h-2.377l3.386-11.687h2.77zm88.787 2.125h-1.377v7.437h1.377c.826 0 1.466-.339 1.92-1.018.452-.678.68-1.576.68-2.692 0-1.161-.224-2.073-.672-2.735-.448-.661-1.09-.992-1.928-.992zm14.394 0-1.457 5.578h2.915l-1.458-5.578zm-104.698 0-1.458 5.578h2.915l-1.457-5.578zM64.41.044c2.696-.128 2.3.047 3.785.227 3.92.477 7.448 3 9.744 6.016 1.679 2.204 1.893 4.935 1.835 7.58-.09 4.159-1.486 7.861-4.778 10.56-1.194.98-2.662 1.623-3.389 2.054-4.773 1.914-9.086 1.207-12.91-.525-2.566-1.16-4.286-3.257-5.25-5.988-.533-1.511-.81-3.018-1.112-4.588-.201-1.048-.1-2.166-.043-3.248.029-.556.254-1.101.393-1.65C54.11 4.863 58.62.32 64.411.043zm1.307 5.003-.046.01-6.204 2.374a.147.147 0 0 0-.067.222l.919 1.272v11.912c0 .081.065.146.146.146h5.259c.08 0 .146-.065.146-.146v-9.013a.395.395 0 0 1 .792 0v9.013c0 .081.065.146.146.146h5.936a.146.146 0 0 0 .131-.211l-.634-1.262v-5.668c0-3.283-2.62-3.74-4.185-3.74-1.043 0-1.859.366-2.186.61v-5.52a.146.146 0 0 0-.199-.136z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <div class="block lg:flex items-center text-white flex-auto">
+          <div class="grid grid-cols-1 flex-auto gap-3">
+            <div class="flex lg:justify-end justify-center">
+              <a href="/" class="divide">About</a>
+              <a href="/" class="divide">Careers</a>
+              <a href="/">Advertise with us</a>
+            </div>
+            <div class="lg:flex block lg:justify-end justify-center">
+              <div class="uppercase font-semibold lg:mr-4">Our brands</div>
+              <a href="/" class="divide">Healthline</a>
+              <a href="/" class="divide">Medical News Today</a>
+              <a href="/" class="divide">Greatist</a>
+              <a href="/" class="divide">Psych Central</a>
+              <a href="/">Bezzy</a>
+            </div>
+          </div>
+          <div class="lg:mt-0 mt-[30px]">
+            <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/07/TRUST-Mark-1.png?" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./query.js"></script>
+</html>

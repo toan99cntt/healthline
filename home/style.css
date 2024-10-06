@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Proxima Nova Condensed Light'
+}
+
+.font-bold {
+  font-family: 'Proxima Nova Condensed Semibold'
+}
+.main {
+  text-align: -webkit-center;
+}
+.full-width {
+  margin-left: calc((100vw - 100%) / -2);
+  margin-right: calc((100vw - 100%) / -2);
+}
+a {
+  display: block;
+}
+a:hover {
+  color: #db1f88
+}
+
+@media only screen and (min-width: 1024px) {
+  .divide:after {
+    display: inline-block;
+    content: '|';
+    margin: 0 1rem;
+    cursor: default;
+  }
+}

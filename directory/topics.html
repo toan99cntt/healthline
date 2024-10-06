@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://use.typekit.net/emv3zbo.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body class="pt-[64px]">
+  <div class="bg-black w-full flex justify-center fixed top-0 left-0 z-[9] px-3 md:px-[47px] leading-[normal]" id="menu-header">
+    <div class="max-w-[1100px] flex-auto ">
+      <div class="justify-between items-center hidden md:flex">
+        <div class="flex-auto text-[20px] gap-[20px] lg:gap-[26px] py-[20px] items-center text-white font-semibold flex">
+          <a class="text-[30px] font-semibold" href="/">
+            healthline
+          </a>
+          <div>Health Conditions <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+          <div>Discover <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+          <div>Plan <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+          <div>Connect <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+        </div>
+        <div class="flex gap-3 text-white items-center font-semibold">
+          <div>SUBSCRIBE</div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div> 
+      </div>
+      <div class="flex justify-between items-center text-white md:hidden py-[15px]">
+        <div class="flex gap-4 text-[23px]">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="flex-auto text-center">
+          <a class="text-[30px] text-white font-semibold" href="/">
+            healthline
+          </a>
+        </div>
+        <div class=" font-semibold">
+          SUBSCRIBE
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="main bg-[#ffffff]">
+    <div class="max-w-[1340px] relative">
+      <picture>
+        <source srcset="https://post.healthline.com/wp-content/uploads/2021/06/Health_AZ_mobile.jpg"
+          media="(max-width: 768px)">
+        <source srcset="https://post.healthline.com/wp-content/uploads/2021/06/Health_A_Z-scaled.jpg"
+          media="(max-width: 990px)">
+        <img class="md:h-full h-[200px] w-full  object-cover"
+          src="https://post.healthline.com/wp-content/uploads/2021/06/Health_A_Z-scaled.jpg" alt="">
+      </picture>
+      <div class="absolute top-[50%] left-[50%] text-[42px] md:text-[70px] font-semibold text-white"
+        style="transform: translate(-50%, -50%)">Health A-Z</div>
+    </div>
+    <div class="px-3 md:px-[47px] w-full">
+      <div class="md:max-w-[1100px] max-w-[550px] w-full text-left text-[17px] md:text-[18px] object-cover">
+        <div>
+          <div class="font-semibold text-center text-[30px] md:text-[35px] lg:text-[34px] my-[35px]">
+            Popular Topics
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="grid grid-cols-1 gap-3 rounded-[5px] overflow-hidden hover:opacity-[0.8]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/10/MDS-Foundation_Pinterest-600x900-copy.png"
+                alt="">
+            </div>
+            <div class="grid grid-cols-1 gap-3 rounded-[5px] overflow-hidden hover:opacity-[0.8]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/09/ALTG-Key-Art-Request-IgAN-Foundation_Soptlight_600x900.png"
+                alt="">
+            </div>
+            <div class="grid grid-cols-1 gap-3 rounded-[5px] overflow-hidden hover:opacity-[0.8]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2023/10/Templates-for-Spotlights-02.jpg" alt="">
+            </div>
+            <div class="grid grid-cols-1 gap-3 rounded-[5px] overflow-hidden hover:opacity-[0.8]">
+              <img width="100%"
+                src="https://media.post.rvohealth.io/wp-content/uploads/2024/10/Cold-Flu-Survival-Guide.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block lg:hidden py-[20px] px-[20px] sticky top-[64px] bg-[#f7f7f7] my-[30px]">
+      <div class="font-semibold text-[20px] md:text-[26px] text-left mb-3">Filter By:</div>
+      <select onchange="navigateToLink(this)" class="w-full px-3 py-4 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+          <option selected value="/directory/topics">Health Topics</option>
+          <option value="/directory/drugs-a-z">Drugs A-Z</option>
+          <option value="/directory/recent">Most Recent</option>
+          <option value="/directory/nutrition">Nutrition</option>
+          <option value="/directory/news">News</option>
+          <option value="/directory/diabetesmine">Diabetes Mine</option>
+          <option value="/directory/human-body-maps">Human Body Maps</option>
+      </select>
+    </div>
+    <div class="md:max-w-[1100px] max-w-[550px] w-full text-left text-[17px] md:text-[18px] bg-[#f7f7f7] my-[30px]">
+      <div class="max-w-full overflow-x-auto hidden lg:block">
+        <nav class="flex items-center px-4 whitespace-nowrap space-x-[80px] font-semibold">
+          <a class="px-2 py-[15px] border-b-4 border-[#19565c] text-[#19565c] float-left" href="/">Health Topics</a>
+          <a href="/">Drugs A-Z</a>
+          <a href="/">Most Recent</a>
+          <a href="/">Nutrition</a>
+          <a href="/">News</a>
+          <a href="/">Diabetes Mine</a>
+          <a href="/">Human Body Maps</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="my-[30px] px-[30px]">
+      <div class="md:max-w-[1100px] max-w-[550px] w-full text-left text-[17px] md:text-[18px]">
+        <div class="gap-7 justify-center uppercase text-center menu-a-z min-h-[60px] my-[30px] hidden lg:flex">
+          <a href="#a">a<div class="node">•</div></a>
+          <a href="#b">b<div class="node">•</div></a>
+          <a href="#c">c<div class="node">•</div></a>
+          <a href="#d">d<div class="node">•</div></a>
+          <a href="#e">e<div class="node">•</div></a>
+          <a href="#f">f<div class="node">•</div></a>
+          <a href="#g">g<div class="node">•</div></a>
+          <a href="#h">h<div class="node">•</div></a>
+          <a href="#i">i<div class="node">•</div></a>
+          <a href="#j">j<div class="node">•</div></a>
+          <a href="#k">k<div class="node">•</div></a>
+          <a href="#l">l<div class="node">•</div></a>
+          <a href="#m">m<div class="node">•</div></a>
+          <a href="#n">n<div class="node">•</div></a>
+          <a href="#o">o<div class="node">•</div></a>
+          <a href="#p">p<div class="node">•</div></a>
+          <a>q<div class="node">•</div></a>
+          <a>r<div class="node">•</div></a>
+          <a href="#s">s<div class="node">•</div></a>
+          <a href="#t">t<div class="node">•</div></a>
+          <a href="#u">u<div class="node">•</div></a>
+          <a href="#v">v<div class="node">•</div></a>
+          <a href="#w">w<div class="node">•</div></a>
+          <a>x<div class="node">•</div></a>
+          <a>y<div class="node">•</div></a>
+          <a>z<div class="node">•</div></a>
+        </div>
+
+        <div class="grid grid-cols-1 lg:flex gap-6 mb-[30px]">
+          <div class="flex-1 space-y-[25px]">
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold">A</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/abdominal-pain">Abdominal Pain</a></li>
+                <li><a href="https://www.healthline.com/health/skin/acne">Acne</a></li>
+                <li><a href="https://www.healthline.com/health/adhd">ADHD</a></li>
+                <li><a href="https://www.healthline.com/health/allergies">Allergies</a></li>
+                <li><a href="https://www.healthline.com/health/how-do-antibiotics-work">Antibiotics</a></li>
+                <li><a href="https://www.healthline.com/health/anxiety">Anxiety</a></li>
+                <li><a href="https://www.healthline.com/health/appendicitis">Appendicitis</a></li>
+                <li><a href="https://www.healthline.com/health/what-is-aromatherapy">Aromatherapy</a></li>
+                <li><a href="https://www.healthline.com/health/arrhythmia">Arrhythmia</a></li>
+                <li><a href="https://www.healthline.com/health/arthritis">Arthritis</a></li>
+                <li><a href="https://www.healthline.com/health/asthma">Asthma</a></li>
+                <li><a href="https://www.healthline.com/health/autism">Autism</a></li>
+                <li><a href="https://www.healthline.com/health/autoimmune-disorders">Autoimmune Disorders</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold">B</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/back-pain">Back Pain</a></li>
+                <li><a href="https://www.healthline.com/health/bipolar-disorder">Bipolar Disorder</a></li>
+                <li><a href="https://www.healthline.com/health/birth-defects">Birth Defects</a></li>
+                <li><a href="https://www.healthline.com/health/blood-cell-disorders">Blood Cell Disorders</a></li>
+                <li><a href="https://www.healthline.com/health/brain-disorders">Brain Disorders</a></li>
+                <li><a href="https://www.healthline.com/health/breast-cancer">Breast Cancer</a></li>
+                <li><a href="https://www.healthline.com/health/bug-bites">Bug Bites</a></li>
+                <li><a href="https://www.healthline.com/health/burns">Burns</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-c">C</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/find-care/articles/dentists/tooth-cavities">Cavities</a></li>
+                <li><a href="https://www.healthline.com/health/chest-pain">Chest Pain</a></li>
+                <li><a href="https://www.healthline.com/health/std/chlamydia">Chlamydia</a></li>
+                <li><a href="https://www.healthline.com/health/crohns-disease">Chron's Disease</a>
+                </li>
+                <li><a href="https://www.healthline.com/health/chronic-fatigue-syndrome">Chronic
+                    Fatigue Syndrome (CFS)</a></li>
+                <li><a href="https://www.healthline.com/health/cocaine">Cocaine</a></li>
+                <li><a href="https://www.healthline.com/health/cold-flu/cold">Common Cold</a></li>
+                <li><a href="https://www.healthline.com/health/constipation">Constipation</a></li>
+                <li><a href="https://www.healthline.com/health/copd">COPD</a></li>
+                <li><a href="https://www.healthline.com/health/coronary-artery-disease">Coronary
+                    Artery Disease</a></li>
+                <li><a href="https://www.healthline.com/coronavirus">COVID-19</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-d">D</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/depression">Depression</a></li>
+                <li><a href="https://www.healthline.com/health/diabetes">Diabetes</a></li>
+                <li><a href="https://www.healthline.com/health/diarrhea">Diarrhea</a></li>
+                <li><a href="https://www.healthline.com/nutrition/diets">Diet Types</a></li>
+                <li><a href="https://www.healthline.com/health/digestion-problems">Digestive
+                    Problems</a></li>
+                <li><a href="https://www.healthline.com/health/dizziness">Dizziness</a></li>
+                <li><a href="https://www.healthline.com/health/drug-abuse">Drug Abuse</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-e">E</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/ear-infections">Ear Infections</a>
+                </li>
+                <li><a href="https://www.healthline.com/nutrition/common-eating-disorders">Eating
+                    Disorders</a></li>
+                <li><a href="https://www.healthline.com/health/eczema">Eczema</a></li>
+                <li><a href="https://www.healthline.com/health/endometriosis">Endometriosis</a></li>
+                <li><a href="https://www.healthline.com/health/epilepsy">Epilepsy</a></li>
+                <li><a href="https://www.healthline.com/health/erectile-dysfunction">Erectile
+                    Disfunction</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-f">F</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/fever">Fever</a></li>
+                <li><a href="https://www.healthline.com/health/fibromyalgia">Fibromyalgia</a></li>
+                <li><a href="https://www.healthline.com/nutrition/fitness">Fitness</a></li>
+                <li><a href="https://www.healthline.com/health/cold-flu/flu">Flu</a></li>
+                <li><a href="https://www.healthline.com/health/food-poisoning">Food Poisoning</a>
+                </li>
+                <li><a href="https://www.healthline.com/health/fracture">Fracture</a></li>
+                <li><a href="https://www.healthline.com/health/fungal-infection">Fungal Infection</a>
+                </li>
+                <li><a href="https://www.healthline.com/health/fungal-nail-infection">Fungal Nail
+                    Infection</a></li>
+                <li><a href="https://www.healthline.com/health/fungal-skin-infection">Fungal Skin
+                    Infection</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-g">G</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/gallbladder-problems-symptoms">Gallbladder</a></li>
+                <li><a href="https://www.healthline.com/health/gallstones">Gallstones</a></li>
+                <li><a href="https://www.healthline.com/health/std/genital-herpes">Genital Herpes</a>
+                </li>
+                <li><a href="https://www.healthline.com/health/gerd">GERD</a></li>
+                <li><a href="https://www.healthline.com/health/gingivitis">Gingivitis</a></li>
+                <li><a href="https://www.healthline.com/health/gout">Gout</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-h">H</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/hair-loss">Hair Loss</a></li>
+                <li><a href="https://www.healthline.com/health/headache">Headache</a></li>
+                <li><a href="https://www.healthline.com/health/hearing-loss">Hearing Loss</a></li>
+                <li><a href="https://www.healthline.com/health/heart-attack">Heart Attack</a></li>
+                <li><a href="https://www.healthline.com/health/heart-disease">Heart Disease</a></li>
+                <li><a href="https://www.healthline.com/health/heart-failure">Heart Failure</a></li>
+                <li><a href="https://www.healthline.com/health/heartburn">Heartburn</a></li>
+                <li><a href="https://www.healthline.com/health/hemorrhoids">Hemmorrhoids</a></li>
+                <li><a href="https://www.healthline.com/health/hepatitis-c">Hepatitis C</a></li>
+                <li><a href="https://www.healthline.com/health/hernia">Hernia</a></li>
+                <li><a href="https://www.healthline.com/health/hip-pain">Hip Pain</a></li>
+                <li><a href="https://www.healthline.com/health/hiv-aids">HIV/AIDS</a></li>
+                <li><a href="https://www.healthline.com/health/hives">Hives</a></li>
+                <li><a href="https://www.healthline.com/health/human-papillomavirus-infection">Human
+                    Papillomavirus (HPV)</a></li>
+                <li><a href="https://www.healthline.com/health/high-blood-pressure-hypertension">Hypertension</a></li>
+                <li><a href="https://www.healthline.com/health/hyperthyroidism">Hyperthyroidism</a>
+                </li>
+                <li><a href="https://www.healthline.com/health/hypotension">Hypotension</a></li>
+                <li><a
+                    href="https://www.healthline.com/health/hypothyroidism/symptoms-treatments-more">Hypothyroidism</a>
+                </li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-i">I</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/indigestion">Indigestion</a></li>
+                <li><a href="https://www.healthline.com/parenthood/baby">Infant Health</a></li>
+                <li><a href="https://www.healthline.com/parenthood/infertility">Infertility</a></li>
+                <li><a href="https://www.healthline.com/health/insomnia">Insomnia</a></li>
+                <li><a href="https://www.healthline.com/health/iron-deficiency-anemia">Iron
+                    Deficiency Anemia</a></li>
+                <li><a href="https://www.healthline.com/health/irritable-bowel-syndrome">Irritable
+                    Bowel Syndrome (IBS)</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-j">J</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/joint-pain">Joint Pain</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-k">K</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/kidney-stones">Kidney Stones</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-l">L</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/leg-pain">Leg Pain</a></li>
+                <li><a href="https://www.healthline.com/health/lice-what-are-lice">Lice</a></li>
+                <li><a href="https://www.healthline.com/health/low-testosterone">Low Testosterone</a>
+                </li>
+                <li><a href="https://www.healthline.com/health/lung-cancer">Lung Cancer</a></li>
+                <li><a href="https://www.healthline.com/health/lyme-disease">Lyme Disease</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-m">M</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/malaria">Malaria</a></li>
+                <li><a href="https://www.healthline.com/medicare">Medicare</a></li>
+                <li><a href="https://www.healthline.com/health/menopause">Menopause</a></li>
+                <li><a href="https://www.healthline.com/health/painful-menstrual-periods">Menstrual
+                    Pain</a></li>
+                <li><a href="https://www.healthline.com/health/menstrual-problems">Menstrual
+                    Problems</a></li>
+                <li><a href="https://www.healthline.com/mental-health">Mental Health</a></li>
+                <li><a href="https://www.healthline.com/health/migraine">Migraine</a></li>
+                <li><a href="https://www.healthline.com/health/mouth-ulcers">Mouth Ulcers</a></li>
+                <li><a href="https://www.healthline.com/health/multiple-sclerosis">Multiple
+                    Sclerosis</a></li>
+                <li><a href="https://www.healthline.com/health/muscle-aches">Muscle Aches</a></li>
+                <li><a href="https://www.healthline.com/health/musculoskeletal-disorders">Musculoskeletal Disorders</a>
+                </li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-n">N</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/nausea-and-vomiting">Nausea</a></li>
+                <li><a href="https://www.healthline.com/health/neck-pain">Neck Pain</a></li>
+                <li><a href="https://www.healthline.com/health/nosebleed">Nosebleed</a></li>
+                <li><a href="https://www.healthline.com/nutrition">Nutrition</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-o">O</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/obesity">Obesity</a></li>
+                <li><a href="https://www.healthline.com/health/oral-cancer">Oral Cancer</a></li>
+                <li><a href="https://www.healthline.com/health/osteoarthritis">Osteoarthritis</a>
+                </li>
+                <li><a href="https://www.healthline.com/health/osteoporosis">Osteoporosis</a></li>
+                <li><a href="https://www.healthline.com/health/ovarian-cysts">Ovarian Cysts</a></li>
+                <li><a href="https://www.healthline.com/health/overactive-bladder">Overactive
+                    Bladder</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-p">P</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/parasitic-infections">Parasites</a>
+                </li>
+                <li><a href="https://www.healthline.com/health/parkinsons">Parkinson's Disease</a>
+                </li>
+                <li><a href="https://www.healthline.com/health/personality-disorders">Personality
+                    Disorders</a></li>
+                <li><a href="https://www.healthline.com/health/phobia-simple-specific">Phobias</a>
+                </li>
+                <li><a href="https://www.healthline.com/health/pneumonia">Pneumonia</a></li>
+                <li><a href="https://www.healthline.com/parenthood">Pregnancy</a></li>
+                <li><a href="https://www.healthline.com/health/premenstrual-syndrome">Premenstrual
+                    Syndrome (PMS)</a></li>
+                <li><a href="https://www.healthline.com/nutrition/probiotics-101">Probiotics</a></li>
+                <li><a href="https://www.healthline.com/health/prostate-cancer">Prostate Cancer</a>
+                </li>
+                <li><a href="https://www.healthline.com/health/psoriasis">Psoriasis</a></li>
+                <li><a href="https://www.healthline.com/health/psoriatic-arthritis">Psoriatic
+                    Arthritis</a></li>
+                <li><a href="https://www.healthline.com/health/psychotherapy">Psychotherapy</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-r">R</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/rheumatoid-arthritis">Rheumatoid
+                    Arthritis</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-s">S</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/seizures">Seizures</a></li>
+                <li><a href="https://www.healthline.com/program/wellness#sex">Sex</a></li>
+                <li><a href="https://www.healthline.com/health/shingles">Shingles</a></li>
+                <li><a href="https://www.healthline.com/health/chronic-pain/shoulder-pain">Shoulder
+                    Pain</a></li>
+                <li><a href="https://www.healthline.com/health/sinusitis">Sinusitis</a></li>
+                <li><a href="https://www.healthline.com/health/skin-disorders">Skin Disorders</a>
+                </li>
+                <li><a href="https://www.healthline.com/program/sleep">Sleep</a></li>
+                <li><a href="https://www.healthline.com/health/stress">Stress</a></li>
+                <li><a href="https://www.healthline.com/health/stroke">Stroke</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-t">T</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/teething">Teething</a></li>
+                <li><a href="https://www.healthline.com/health/tmj-disorders">TMJ Disorders</a></li>
+                <li><a href="https://www.healthline.com/parenthood/toddler">Toddler</a></li>
+                <li><a href="https://www.healthline.com/health/tongue-problems-2">Tongue Problems</a>
+                </li>
+                <li><a href="https://www.healthline.com/health/type-1-diabetes-causes-symtoms-treatments">Type 1
+                    Diabetes</a></li>
+                <li><a href="https://www.healthline.com/health/type-2-diabetes">Type 2 Diabetes</a>
+                </li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-u">U</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/ulcerative-colitis">Ulcerative
+                    Colitis</a></li>
+                <li><a href="https://www.healthline.com/health/urinary-incontinence">Urinary
+                    Incontinence</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-v">V</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/vaccinations">Vaccinations</a></li>
+                <li><a href="https://www.healthline.com/health/vaginal-infection">Vaginal
+                    Infection</a></li>
+                <li><a href="https://www.healthline.com/health/vertigo">Vertigo</a></li>
+                <li><a href="https://www.healthline.com/nutrition/vitamins-and-supplements">Vitamins
+                    &amp; Supplements</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-w">W</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/nutrition/weight-management">Weight Loss</a>
+                </li>
+                <li><a href="https://www.healthline.com/nutrition/weight-management">Weight
+                    Management</a></li>
+                <li><a href="https://www.healthline.com/program/wellness">Women's Wellness</a></li>
+              </ul>
+            </div>
+            <div class="space-y-[10px]">
+              <div class="flex gap-9 items-center">
+                <div class="text-[24px] sm:text-[38px] font-semibold" id="scroll-y">Y</div>
+                <div class="w-full h-[1px] bg-[#dcdbdb]"></div>
+              </div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://www.healthline.com/health/fitness-exercises/definitive-guide-to-yoga">Yoga</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-[300px]"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="bg-[#fbf5ed] text-[14px] py-[40px] md:px-[47px] main">
+      <div class="md:max-w-[1100px] max-w-[550px] w-full py-6 px-[10px]">
+        <div class="inline lg:flex gap-[55px] lg:space-y-2 space-y-[30px] items-center mb-[20px] lg:mb-[60px]">
+          <a href="/" class="lg:w-[191px] flex w-full justify-center lg:justify-start">
+            <img width="191px" src="https://s3-us-west-2.amazonaws.com/healthline-prod-next/content/hl-black.svg
+            " alt="">
+          </a>
+          <div class="flex gap-5 text-[19px] justify-center lg:justify-start">
+            <a href="/">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="/">
+              <i class="fa-brands fa-flipboard"></i>
+            </a>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-5">
+          <div class="justify-self-center lg:justify-self-start lg:max-w-[100%] max-w-[550px]">
+            <div class="space-y-[15px] lg:text-left text-center">
+              <div class="text-[26px] font-semibold">Get our wellness newsletter</div>
+              <div>Filter out the noise and nurture your inbox with health and wellness advice that’s inclusive and
+                rooted
+                in medical expertise.</div>
+              <div class="flex lg:justify-start justify-center">
+                <input type="text" class="w-[215px] px-[10px]" placeholder="Enter your email">
+                <div
+                  class="uppercase w-[150px] h-[50px] text-center text-white bg-[#02838d] hover:bg-[#db1f88] content-center font-semibold">
+                  Sign up</div>
+              </div>
+              <div class="text-black text-[14px]">
+                Your <a href="/" class="inline">privacy</a> is important to us
+              </div>
+            </div>
+          </div>
+          <div class="justify-self-center lg:justify-self-start space-y-[20px]">
+            <div class="flex text-left font-semibold gap-5 lg:max-w-[100%] max-w-[550px] justify-center lg:justify-start">
+              <div class="space-y-[10px] w-full max-w-[150px]">
+                <a href="/">About Us</a>
+                <a href="/">Contact Us</a>
+                <a href="/">Privacy Policy</a>
+                <a href="/">Privacy Settings</a>
+                <a href="/">Advertising Policy</a>
+                <a href="/">Health Topics</a>
+              </div>
+              <div class="space-y-[10px]">
+                <a href="/">Sitemap</a>
+                <a href="/">Medical Affairs</a>
+                <a href="/">Content Integrity</a>
+                <a href="/">Newsletters</a>
+                <div class="hidden lg:block">© 2024 Healthline Media LLC. All rights reserved. Healthline Media is an
+                  RVO
+                  Health Company. Our website services, content, and products are for informational purposes only.
+                  Healthline Media does not provide medical advice, diagnosis, or treatment. See additional information.
+                </div>
+              </div>
+            </div>
+            <div class="lg:hidden block max-w-[550px]">© 2024 Healthline Media LLC. All rights reserved. Healthline
+              Media
+              is an RVO Health Company. Our website services, content, and products are for informational purposes only.
+              Healthline Media does not provide medical advice, diagnosis, or treatment. See additional information.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-[14px] md:px-[47px] main">
+      <div class="md:max-w-[1100px] max-w-[550px] w-full py-6 px-[10px] block lg:flex gap-[40px]">
+        <div>
+          <a href="/">
+            <svg alt="Healthline Media" width="132" height="50" class="css-11hc4ky" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 132 50">
+              <path fill="#FFF"
+                d="M30.477 38.313v9.62h3.98V50h-6.36V38.313h2.38zm11.137 0v2.068h-2.548V50h-2.308v-9.62h-2.565v-2.067h7.421zm3.645 0v4.643h3.826v-4.643h2.337V50h-2.337v-4.976h-3.826V50h-2.32V38.313h2.32zm10.4 0v9.62h3.98V50h-6.362V38.313h2.381zm7.69 0V50h-2.12V38.313h2.12zm4.48 0 3.798 7.149v-7.149h2.325V50h-2.22l-3.955-7.447V50H65.47V38.313h2.359zm14.605 0v2.05h-4.13v2.681h4.013v2.032h-4.013v2.874h4.13V50h-6.362V38.313h6.362zm8.654 0 2.213 7.009 2.23-7.009h3.071V50h-2.264v-8.025L93.764 50h-.943l-2.54-8.025V50H88V38.313h3.088zm15.996 0v2.05h-4.13v2.681h4.014v2.032h-4.014v2.874h4.13V50h-6.361V38.313h6.361zm-104.764 0v4.643h3.825v-4.643h2.337V50H6.145v-4.976H2.32V50H0V38.313h2.32zm14.644 0v2.05h-4.13v2.681h4.013v2.032h-4.013v2.874h4.13V50h-6.362V38.313h6.362zm104.434 0V50h-2.12V38.313h2.12zm7.216-.065L132 49.935h-2.377l-.53-2.085h-3.728l-.53 2.085h-2.377l3.386-11.687h2.77zm-16.063 0c1.008 0 1.878.246 2.612.736.733.49 1.293 1.18 1.68 2.068.386.888.579 1.904.579 3.049 0 1.144-.19 2.158-.571 3.04-.381.882-.938 1.568-1.671 2.058-.734.49-1.61.736-2.629.736h-3.611V38.248h3.611zm-88.636 0 3.386 11.687h-2.377l-.53-2.085h-3.728l-.53 2.085h-2.377l3.386-11.687h2.77zm88.787 2.125h-1.377v7.437h1.377c.826 0 1.466-.339 1.92-1.018.452-.678.68-1.576.68-2.692 0-1.161-.224-2.073-.672-2.735-.448-.661-1.09-.992-1.928-.992zm14.394 0-1.457 5.578h2.915l-1.458-5.578zm-104.698 0-1.458 5.578h2.915l-1.457-5.578zM64.41.044c2.696-.128 2.3.047 3.785.227 3.92.477 7.448 3 9.744 6.016 1.679 2.204 1.893 4.935 1.835 7.58-.09 4.159-1.486 7.861-4.778 10.56-1.194.98-2.662 1.623-3.389 2.054-4.773 1.914-9.086 1.207-12.91-.525-2.566-1.16-4.286-3.257-5.25-5.988-.533-1.511-.81-3.018-1.112-4.588-.201-1.048-.1-2.166-.043-3.248.029-.556.254-1.101.393-1.65C54.11 4.863 58.62.32 64.411.043zm1.307 5.003-.046.01-6.204 2.374a.147.147 0 0 0-.067.222l.919 1.272v11.912c0 .081.065.146.146.146h5.259c.08 0 .146-.065.146-.146v-9.013a.395.395 0 0 1 .792 0v9.013c0 .081.065.146.146.146h5.936a.146.146 0 0 0 .131-.211l-.634-1.262v-5.668c0-3.283-2.62-3.74-4.185-3.74-1.043 0-1.859.366-2.186.61v-5.52a.146.146 0 0 0-.199-.136z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <div class="block lg:flex items-center text-white flex-auto">
+          <div class="grid grid-cols-1 flex-auto gap-3">
+            <div class="flex lg:justify-end justify-center lg:space-x-5">
+              <a href="/" class="divide">About</a>
+              <a href="/" class="divide">Careers</a>
+              <a href="/">Advertise with us</a>
+            </div>
+            <div class="lg:flex block lg:justify-end justify-center lg:space-x-5">
+              <div class="uppercase font-semibold lg:mr-4">Our brands</div>
+              <a href="/" class="divide">Healthline</a>
+              <a href="/" class="divide">Medical News Today</a>
+              <a href="/" class="divide">Greatist</a>
+              <a href="/" class="divide">Psych Central</a>
+              <a href="/">Bezzy</a>
+            </div>
+          </div>
+          <div class="lg:mt-0 mt-[30px]">
+            <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/07/TRUST-Mark-1.png?" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./query.js" ></script>
+</html>
