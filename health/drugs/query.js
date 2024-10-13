@@ -20,7 +20,7 @@ function isElementAtTop(el) {
 function handleScroll() {
   
   const sections = document.querySelectorAll('.section');
-  const menuItems = document.querySelectorAll('.menu-item');
+  const menuItems = document.querySelectorAll('#menu-hash .menu-item');
   const menuHash = document.getElementById('menu-hash');
   const menuHeader = document.getElementById('menu-header');
   const content = document.getElementById('content');

@@ -9,29 +9,544 @@
   <link href="https://use.typekit.net/emv3zbo.css" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="../layouts/header.css">
 </head>
 
 <body class="pt-[65px]">
-  <div class="bg-black w-full flex justify-center fixed top-0 left-0 z-[9] px-3 md:px-[47px] leading-[normal]" id="menu-header">
+  <div class="bg-black w-full flex justify-center fixed top-0 left-0 z-[9] px-3 md:px-[47px]" id="menu-header">
     <div class="max-w-[1100px] flex-auto ">
-      <div class="justify-between items-center hidden md:flex">
-        <div class="flex-auto text-[20px] gap-[20px] lg:gap-[26px] py-[20px] items-center text-white font-bold flex">
-          <a class="!text-white text-[30px] font-bold" href="/">
+      <div class="justify-between items-center hidden lg:flex">
+        <div class="flex-auto menus text-[20px] gap-[20px] lg:gap-[26px] items-center text-white flex pc">
+          <a class="text-[30px] font-bold" href="/">
             healthline
           </a>
-          <div>Health Conditions <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
-          <div>Discover <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
-          <div>Plan <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
-          <div>Connect <i class="fa-solid fa-chevron-down text-[12px]"></i></div>
+          <ul class="max-w-5xl flex">
+            <li class="menu-item">
+              <a href="#" class="text-white block hover:text-[#fcba44] font-bold">
+                Health Conditions
+                <i class="fa-solid fa-chevron-down text-[13px]"></i>
+              </a>
+              <ul class="submenu absolute left-1/2 -translate-x-1/2 w-screen bg-transparent z-50">
+                <div class="bg-[#fbf5ed] text-webkit-center px-3 md:px-[47px]">
+                  <div class="max-w-[1100px] w-full flex py-5 gap-14 text-left">
+                    <div class="w-[300px] space-y-[16px]">
+                      <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+                        <p>Featured</p>
+                        <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                          <span class="mr-1">All</span>
+                          <i
+                            class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+                        </a>
+                      </div>
+                      <ul class="text-[18px] space-y-4">
+                        <li><a href="https://www.healthline.com/breast-cancer">Breast Cancer</a></li>
+                        <li><a href="https://www.healthline.com/inflammatory-bowel-disease">IBD </a></li>
+                        <li><a href="https://www.healthline.com/migraine">Migraine</a></li>
+                        <li><a href="https://www.healthline.com/multiple-sclerosis">Multiple Sclerosis (MS)</a></li>
+                        <li><a href="https://www.healthline.com/rheumatoid-arthritis">Rheumatoid Arthritis</a></li>
+                        <li><a href="https://www.healthline.com/type-2-diabetes">Type 2 Diabetes</a></li>
+                        <li><a href="https://www.healthline.com/sponsored-topics">Sponsored Topics</a></li>
+                      </ul>
+                    </div>
+                    <div class="flex-auto space-y-[16px]">
+                      <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+                        <p>Articles</p>
+                        <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                          <span class="mr-1">All</span>
+                          <i
+                            class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+                        </a>
+                      </div>
+                      <ul role="menu" class="grid grid-rows-7 grid-flow-col gap-4 text-[18px]">
+                        <li><a href="https://www.healthline.com/health/gerd">Acid
+                            Reflux</a>
+                        </li>
+                        <li><a href="https://www.healthline.com/health/adhd">ADHD</a></li>
+                        <li><a href="https://www.healthline.com/health/allergies">Allergies</a></li>
+                        <li><a href="https://www.healthline.com/health/alzheimers-disease">Alzheimer's &amp;
+                            Dementia</a></li>
+                        <li><a href="https://www.healthline.com/health/bipolar-disorder">Bipolar Disorder</a></li>
+                        <li><a href="https://www.healthline.com/health/cancer">Cancer</a>
+                        </li>
+                        <li><a href="https://www.healthline.com/health/crohns-disease">Crohn's Disease</a></li>
+                        <li><a href="https://www.healthline.com/health/chronic-pain">Chronic
+                            Pain</a></li>
+                        <li><a href="https://www.healthline.com/health/cold-flu">Cold &amp;
+                            Flu</a></li>
+                        <li><a href="https://www.healthline.com/health/copd">COPD</a></li>
+                        <li><a href="https://www.healthline.com/health/depression">Depression</a></li>
+                        <li><a href="https://www.healthline.com/health/fibromyalgia">Fibromyalgia</a></li>
+                        <li><a href="https://www.healthline.com/health/heart-disease">Heart Disease</a></li>
+                        <li><a href="https://www.healthline.com/health/high-cholesterol">High Cholesterol</a></li>
+                        <li><a href="https://www.healthline.com/health/hiv-aids">HIV</a></li>
+                        <li><a
+                            href="https://www.healthline.com/health/high-blood-pressure-hypertension">Hypertension</a>
+                        </li>
+                        <li><a href="https://www.healthline.com/health/managing-idiopathic-pulmonary-fibrosis">IPF</a>
+                        </li>
+                        <li><a chref="https://www.healthline.com/health/osteoarthritis">Osteoarthritis</a></li>
+                        <li><a href="https://www.healthline.com/health/psoriasis">Psoriasis</a></li>
+                        <li><a href="https://www.healthline.com/health/skin-disorders">Skin Disorders and Care</a></li>
+                        <li><a href="https://www.healthline.com/health/sexually-transmitted-diseases">STDs</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+                <a href="#" class="text-white hover:text-[#fcba44] block font-bold">
+                  Discover 
+                  <i class="fa-solid fa-chevron-down text-[13px]"></i>
+                </a>
+              <ul class="submenu absolute left-1/2 -translate-x-1/2 w-screen bg-transparent z-50">
+                <div class="bg-[#fbf5ed] text-webkit-center px-3 md:px-[47px]">
+                  <div class="max-w-[1100px] w-full grid grid-cols-4 py-5 gap-12 text-left">
+                    <div class="space-y-[16px]">
+                      <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+                        <p>Wellness Topics</p>
+                        <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                          <span class="mr-1">All</span>
+                          <i
+                            class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+                        </a>
+                      </div>
+                      <ul class="space-y-3 text-[18px]">
+                        <li><a href="https://www.healthline.com/nutrition">Nutrition</a></li>
+                        <li><a href="https://www.healthline.com/fitness">Fitness</a></li>
+                        <li><a href="https://www.healthline.com/skincare">Skin Care</a></li>
+                        <li><a href="https://www.healthline.com/sexual-health">Sexual Health</a></li>
+                        <li><a href="https://www.healthline.com/program/wellness">Women's Health</a></li>
+                        <li><a href="https://www.healthline.com/mental-health">Mental Well-Being</a></li>
+                        <li><a href="https://www.healthline.com/sleep">Sleep</a></li>
+                      </ul>
+                    </div>
+                    <div class="space-y-[16px]">
+                      <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+                        <p>Featured</p>
+                        <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                          <span class="mr-1">All</span>
+                          <i
+                            class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+                        </a>
+                      </div>
+                      <ul class="space-y-3 text-[18px]">
+                        <li><a href="https://www.healthline.com/reviews/vitamin-and-supplement-products">Vitamins &amp;
+                            Supplements</a></li>
+                        <li><a href="https://www.healthline.com/reviews/sleep-products">Sleep</a></li>
+                        <li><a href="https://www.healthline.com/reviews/mental-health-services-and-products">Mental
+                            Health</a></li>
+                        <li><a href="https://www.healthline.com/reviews/nutrition-products">Nutrition</a></li>
+                        <li><a href="https://www.healthline.com/reviews/at-home-testing-products">At-Home Testing</a>
+                        </li>
+                        <li><a href="https://www.healthline.com/reviews/cbd-products">CBD</a></li>
+                        <li><a href="https://www.healthline.com/reviews/mens-health-products">Men’s Health</a></li>
+                      </ul>
+                    </div>
+                    <div class="space-y-[16px]">
+                      <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+                        <p>Original Series</p>
+                        <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                          <span class="mr-1">All</span>
+                          <i
+                            class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+                        </a>
+                      </div>
+                      <ul class="space-y-3 text-[18px]">
+                        <li>
+                          <a class="flex gap-5 items-center"
+                            href="https://www.healthline.com/content-series/fresh-food-fast">
+                            <img class="w-[50px] h-[50px]"
+                              src="https://media.post.rvohealth.io/wp-content/uploads/2021/07/FFF_lead-logo4-23.png?w=240&amp;h=240"
+                              alt="">
+                            <div>
+                              <span class="font-bold">Fresh Food Fast</span>
+                              <p class="text-[14px]">Food hacks to make eating healthier, easier.</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="flex gap-5 items-center"
+                            href="https://www.healthline.com/content-series/diagnosis-diaries">
+                            <img class="w-[50px] h-[50px]"
+                              src="https://media.post.rvohealth.io/wp-content/uploads/2022/07/HL-icon-diagnosis-diaries-1.png"
+                              alt="">
+                            <div>
+                              <span class="font-bold">Diagnosis Diaries</span>
+                              <p class="text-[14px]">Real diagnosis stories from people who get it.</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="flex gap-5 items-center"
+                            href="https://www.healthline.com/content-series/youre-not-alone">
+                            <img class="w-[50px] h-[50px]"
+                              src="https://media.post.rvohealth.io/wp-content/uploads/2022/07/HL-icon-youre-not-alone-1.png"
+                              alt="">
+                            <div>
+                              <span class="font-bold">You’re Not Alone</span>
+                              <p class="text-[14px]">Stories from real people that destigmatize mental health
+                                conditions.</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="flex gap-5 items-center"
+                            href="https://www.healthline.com/content-series/present-tense">
+                            <img class="w-[50px] h-[50px]"
+                              src="https://media.post.rvohealth.io/wp-content/uploads/2021/05/HL-Content_Series-Present_Tense-Series_Logo-500x500-Series_Logo.png"
+                              alt="">
+                            <div>
+                              <span class="font-bold">Present Tense</span>
+                              <p class="text-[14px]">Real-world mindfulness for busy people.</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <div class="space-y-[16px]">
+                      <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+                        <p>Video Series</p>
+                        <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                          <span class="mr-1">All</span>
+                          <i
+                            class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+                        </a>
+                      </div>
+                      <ul class="space-y-3 text-[18px]">
+                        <li>
+                          <a class="flex gap-5 items-center"
+                            href="https://www.healthline.com/health/video/youth-in-focus">
+                            <img
+                              src="https://media.post.rvohealth.io/wp-content/uploads/2022/07/240x240-Youth-in-Focus.png"
+                              alt="" class="w-[50px] h-[50px]">
+                            <div>
+                              <span class="font-bold">Youth in Focus</span>
+                              <p class="text-[14px]">Mental health challenges facing our youth.</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="flex gap-5 items-center"
+                            href="https://www.healthline.com/health/nutrition/video/healthy-harvest">
+                            <img
+                              src="https://media.post.rvohealth.io/wp-content/uploads/2022/09/Healthy_harvest_icon_Artboard-4-transformed.png"
+                              alt="" class="w-[50px] h-[50px]">
+                            <div>
+                              <span class="font-bold">Healthy Harvest</span>
+                              <p class="text-[14px]">Meet your food, from farm to table.</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="flex gap-5 items-center"
+                            href="https://www.healthline.com/health/breast-cancer/metastatic-breast-cancer-artist-eye">
+                            <img
+                              src="https://media.post.rvohealth.io/wp-content/uploads/2023/10/Through_an_artists_eye-07.png"
+                              alt="" class="w-[50px] h-[50px]">
+                            <div>
+                              <span class="font-bold">Through An Artist's Eye</span>
+                              <p class="text-[14px]">A breast cancer story told through art.</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="flex gap-5 items-center"
+                            href="https://www.healthline.com/health/video/future-of-health">
+                            <img
+                              src="https://media.post.rvohealth.io/wp-content/uploads/2022/07/HL-icon-future-of-health-1.png"
+                              alt="" class="w-[50px] h-[50px]">
+                            <div>
+                              <span class="font-bold">Future of Health</span>
+                              <p class="text-[14px]">Innovations shaping the future of health.</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="text-white hover:text-[#fcba44] block font-bold">Plan <i class="fa-solid fa-chevron-down text-[13px]"></i></a>
+              <ul class="submenu absolute left-1/2 -translate-x-1/2 w-screen bg-transparent z-50">
+                <div class="bg-[#fbf5ed] text-webkit-center px-3 md:px-[47px]">
+                  <div class="max-w-[1100px] w-full grid grid-cols-4 py-5 gap-12 text-left">
+                    <div class="space-y-[16px]">
+                      <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+                        <p>Health Challenges</p>
+                        <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                          <span class="mr-1">All</span>
+                          <i
+                            class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+                        </a>
+                      </div>
+                      <ul class="space-y-3 text-[18px]">
+                        <li><a href="https://www.healthline.com/newsletter-signup/mindfulness-challenge">Mindful
+                            Eating</a></li>
+                        <li><a href="https://www.healthline.com/newsletter-signup/sugar-challenge">Sugar Savvy</a></li>
+                        <li><a href="https://www.healthline.com/newsletter-signup/move-your-body-challenge">Move Your
+                            Body</a></li>
+                        <li><a href="https://www.healthline.com/newsletter-signup/gut-check-challenge">Gut Health</a>
+                        </li>
+                        <li><a href="https://www.healthline.com/newsletter-signup/mood-foods-challenge">Mood Foods</a>
+                        </li>
+                        <li><a href="https://www.healthline.com/newsletter-signup/align-your-spine-challenge">Align Your
+                            Spine</a></li>
+                      </ul>
+
+                    </div>
+                    <div class="space-y-[16px]">
+                      <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+                        <p>Find Care</p>
+                        <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                          <span class="mr-1">All</span>
+                          <i
+                            class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+                        </a>
+                      </div>
+                      <ul class="space-y-3 text-[18px]">
+                        <li><a target="_blank"
+                            href="https://care.healthline.com/find-care/specialty/primary-care-doctors?ref=global">Primary
+                            Care</a></li>
+                        <li><a target="_blank"
+                            href="https://care.healthline.com/find-care/specialty/mental-health-professional?ref=global">Mental
+                            Health</a></li>
+                        <li><a target="_blank"
+                            href="https://care.healthline.com/find-care/specialty/obstetrics-gynecology?ref=global">OB-GYN</a>
+                        </li>
+                        <li><a target="_blank"
+                            href="https://care.healthline.com/find-care/specialty/dermatology?ref=global">Dermatologists</a>
+                        </li>
+                        <li><a target="_blank"
+                            href="https://care.healthline.com/find-care/specialty/neurology?ref=global">Neurologists</a>
+                        </li>
+                        <li><a target="_blank"
+                            href="https://care.healthline.com/find-care/specialty/cardiology?ref=global">Cardiologists</a>
+                        </li>
+                        <li><a target="_blank"
+                            href="https://care.healthline.com/find-care/specialty/orthopedic-surgery?ref=global">Orthopedists</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="space-y-[16px]">
+                      <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+                        <p>Lifestyle Quizzes</p>
+                        <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                          <span class="mr-1">All</span>
+                          <i
+                            class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+                        </a>
+                      </div>
+                      <ul class="space-y-3 text-[18px]">
+                        <li>
+                          <a href="https://www.healthline.com/nutrition/weight-management-quiz">Weight Management</a>
+                        </li>
+                        <li>
+                          <a href="https://www.healthline.com/health/depression/teenage-quiz">Am I Depressed? A Quiz for
+                            Teens</a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.healthline.com/health/mental-health/quiz-are-you-a-workaholic#quiz-are-you-a-workaholic">Are
+                            You a Workaholic?</a>
+                        </li>
+                        <li>
+                          <a href="https://www.healthline.com/health/healthy-sleep/quiz-how-well-do-you-sleep">How Well
+                            Do You Sleep?</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="space-y-[16px]">
+                      <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+                        <p>Tools & Resources</p>
+                        <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                          <span class="mr-1">All</span>
+                          <i
+                            class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+                        </a>
+                      </div>
+                      <ul class="space-y-3 text-[18px]">
+                        <li><a href="https://www.healthline.com/health-news" target="_blank">Health News</a></li>
+                        <li><a
+                            href="https://activation.healthline.com/assessment/assessment/diets/prompt/1?v=1&tc=120226&subid=hl_dietfinder_1_"
+                            target="_blank" rel="noopener noreferrer nofollow">Find a Diet</a></li>
+                        <li><a
+                            href="https://activation.healthline.com/assessment/assessment/pregnancy-snacks/prompt/1?v=1"
+                            target="_blank" rel="noopener noreferrer nofollow">Find Healthy Snacks</a></li>
+                        <li><a href="https://www.healthline.com/drugs">Drugs A-Z</a></li>
+                        <li><a href="https://www.healthline.com/directory/topics">Health A-Z</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="text-white hover:text-[#fcba44] block font-bold">Connect <i class="fa-solid fa-chevron-down text-[13px]"></i></a>
+              <ul class="submenu absolute left-1/2 -translate-x-1/2 w-screen bg-transparent z-50">
+                <div class="bg-[#fbf5ed] text-webkit-center px-3 md:px-[47px]">
+                  <div class="max-w-[1100px] w-full grid grid-cols-1 py-5 gap-12 text-left">
+                    <div class="space-y-[16px]">
+                      <div class=" border-b-[3px] py-3 border-[#767474]">
+                        <div class="flex gap-3 items-center justify-between font-bold">
+                          <p class="text-[20px]">Find Your Bezzy Community</p>
+                          <a class="css-dke6ht"
+                            href="https://www.bezzy.com/?utm_source=healthline&utm_medium=nav-bar-connections">
+                            <span class="mr-1">All</span>
+                            <i
+                              class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+                          </a>
+                        </div>
+                        <p class="text-[16px]">Bezzy communities provide meaningful connections with others living with
+                          chronic conditions. Join Bezzy on the web or mobile app.</p>
+                      </div>
+                      <div class="border-b-[3px] py-3 border-[#767474]">
+                        <ul class="grid grid-cols-3 gap-4 mb-4">
+                          <li>
+                            <a class="space-y-2"
+                              href="https://www.bezzybc.com/lp/2/?verzenio&utm_source=healthline&utm_medium=nav-bar-connections"
+                              target="_blank" rel="noopener noreferrer">
+                              <div class="flex gap-3 items-center font-semibold">
+                                <img class="w-[70px] h-[70px]"
+                                  src="https://media.post.rvohealth.io/wp-content/uploads/2022/01/Bezzy-Breast-Cancer.png"
+                                  alt="">
+                                <p>Breast Cancer</p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="space-y-2"
+                              href="https://www.bezzyibd.com/?utm_source=healthline&utm_medium=nav-bar-connections"
+                              target="_blank" rel="noopener noreferrer">
+                              <div class="flex gap-3 items-center font-semibold">
+                                <img class="w-[70px] h-[70px]"
+                                  src="https://media.post.rvohealth.io/wp-content/uploads/2022/01/Bezzy-Inflammatory-Bowel-Disease.png"
+                                  alt="">
+                                <p>Inflammatory Bowel Disease</p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="space-y-2"
+                              href="https://www.bezzycopd.com/?utm_source=healthline&utm_medium=nav-bar-connections"
+                              target="_blank" rel="noopener noreferrer">
+                              <div class="flex gap-3 items-center font-semibold">
+                                <img class="w-[70px] h-[70px]"
+                                  src="https://media.post.rvohealth.io/wp-content/uploads/2024/04/Bezzy_COPD_Icon_Circle_280x280.png"
+                                  alt="">
+                                <p>COPD</p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="space-y-2"
+                              href="https://www.bezzymigraine.com/?utm_source=healthline&utm_medium=nav-bar-connections"
+                              target="_blank" rel="noopener noreferrer">
+                              <div class="flex gap-3 items-center font-semibold">
+                                <img class="w-[70px] h-[70px]"
+                                  src="https://media.post.rvohealth.io/wp-content/uploads/2022/01/Bezzy-Migraine.png"
+                                  alt="">
+                                <p>Migraine</p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="space-y-2"
+                              href="https://www.bezzyms.com/?utm_source=healthline&utm_medium=nav-bar-connections"
+                              target="_blank" rel="noopener noreferrer">
+                              <div class="flex gap-3 items-center font-semibold">
+                                <img class="w-[70px] h-[70px]"
+                                  src="https://media.post.rvohealth.io/wp-content/uploads/2022/01/Bezzy-Multiple-Sclerosis.png"
+                                  alt="">
+                                <p>Multiple Sclerosis</p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="space-y-2"
+                              href="https://www.bezzypsoriasis.com/?utm_source=healthline&utm_medium=nav-bar-connections"
+                              target="_blank" rel="noopener noreferrer">
+                              <div class="flex gap-3 items-center font-semibold">
+                                <img class="w-[70px] h-[70px]"
+                                  src="https://media.post.rvohealth.io/wp-content/uploads/2022/04/Bezzy-PsO.png" alt="">
+                                <p>Psoriasis</p>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                        <p class="text-[20px] font-bold">Follow us on social media</p>
+                        <p class="text-[16px]">Can't get enough? Connect with us for all things health.</p>
+                      </div>
+                      <div class="flex gap-10 items-center text-[33px] justify-center lg:justify-start">
+                        <a href="/">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <rect width="24" height="24" fill="none" />
+                            <path fill="black"
+                              d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z" />
+                          </svg>
+                        </a>
+                        <a href="/">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <rect width="24" height="24" fill="none" />
+                            <path fill="black"
+                              d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23" />
+                          </svg>
+                        </a>
+                        <a href="/">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                            <rect width="16" height="16" fill="none" />
+                            <path fill="black"
+                              d="M8 5.67C6.71 5.67 5.67 6.72 5.67 8S6.72 10.33 8 10.33S10.33 9.28 10.33 8S9.28 5.67 8 5.67M15 8c0-.97 0-1.92-.05-2.89c-.05-1.12-.31-2.12-1.13-2.93c-.82-.82-1.81-1.08-2.93-1.13C9.92 1 8.97 1 8 1s-1.92 0-2.89.05c-1.12.05-2.12.31-2.93 1.13C1.36 3 1.1 3.99 1.05 5.11C1 6.08 1 7.03 1 8s0 1.92.05 2.89c.05 1.12.31 2.12 1.13 2.93c.82.82 1.81 1.08 2.93 1.13C6.08 15 7.03 15 8 15s1.92 0 2.89-.05c1.12-.05 2.12-.31 2.93-1.13c.82-.82 1.08-1.81 1.13-2.93c.06-.96.05-1.92.05-2.89m-7 3.59c-1.99 0-3.59-1.6-3.59-3.59S6.01 4.41 8 4.41s3.59 1.6 3.59 3.59s-1.6 3.59-3.59 3.59m3.74-6.49c-.46 0-.84-.37-.84-.84s.37-.84.84-.84s.84.37.84.84a.8.8 0 0 1-.24.59a.8.8 0 0 1-.59.24Z" />
+                          </svg>
+                        </a>
+                        <a href="/">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <rect width="24" height="24" fill="none" />
+                            <circle cx="4.983" cy="5.009" r="2.188" fill="black" />
+                            <path fill="black"
+                              d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118c1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783c-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0H6.87v12.139H3.095z" />
+                          </svg>
+                        </a>
+                        <a href="/">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <rect width="24" height="24" fill="none" />
+                            <path fill="black" fill-rule="evenodd"
+                              d="M22.54 6.42a2.77 2.77 0 0 0-1.945-1.957C18.88 4 12 4 12 4s-6.88 0-8.595.463A2.77 2.77 0 0 0 1.46 6.42C1 8.148 1 11.75 1 11.75s0 3.602.46 5.33a2.77 2.77 0 0 0 1.945 1.958C5.121 19.5 12 19.5 12 19.5s6.88 0 8.595-.462a2.77 2.77 0 0 0 1.945-1.958c.46-1.726.46-5.33.46-5.33s0-3.602-.46-5.33M9.75 8.479v6.542l5.75-3.271z"
+                              clip-rule="evenodd" />
+                          </svg>
+                        </a>
+                        <a href="/">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
+                            <rect width="32" height="32" fill="none" />
+                            <path fill="black"
+                              d="M0 0v32h32V0zm25.599 12.803h-6.401v6.395h-6.395v6.401H6.402V6.402h19.197z" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            <div id="triangle-up" class="opacity-0 absolute bottom-0 left-0"></div>
+          </ul>
         </div>
         <div class="flex gap-3 text-white items-center font-bold">
           <div>SUBSCRIBE</div>
           <i class="fa-solid fa-magnifying-glass"></i>
         </div> 
       </div>
-      <div class="flex justify-between items-center text-white md:hidden py-[15px]">
-        <div class="flex gap-4 text-[23px]">
-          <i class="fa-solid fa-bars"></i>
+      <div class="flex justify-between items-center text-white lg:hidden py-1 md:py-[12px]">
+        <div class="flex gap-4 text-[25px]" onclick="openMenu()">
+          <i class="fa-solid fa-bars " id="icon-menu"></i>
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="flex-auto text-center">
@@ -42,6 +557,495 @@
         <div class=" font-bold">
           SUBSCRIBE
         </div> 
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: rgba(0, 0, 0, 0.35);" class="fixed top-[52px] md:top-[68px] left-0 z-40 h-[0px] overflow-hidden transition-height w-full container-menus-mobile">
+    <div class="w-full max-w-[370px] h-screen overflow-hidden grid bg-[#fbf5ed]"
+      style="grid-template-columns: 1fr 1fr;">
+      <div class="menus-mobile w-[370px] transition-width text-[20px] ">
+        <div class="px-6">
+          <div class="border-b-[1px] border-[#767474] text-[18px] flex py-6">
+            <input type="text" class="flex-auto font-thin px-[10px]" placeholder="Enter your email">
+            <div class="uppercase text-white bg-[#02838d] hover:bg-[#02838d] font-bold px-4 py-2">
+              Go</div>
+          </div>
+        </div>
+        <ul class="px-6 font-bold ">
+          <li class="menu-item px-2 flex justify-between items-center border-b-[1px] border-[#767474] hover:text-[#02838d]">
+            <a href="#">Health Conditions</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li class="menu-item px-2 flex justify-between items-center border-b-[1px] border-[#767474] hover:text-[#02838d]">
+            <a href="#">Discover</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li class="menu-item px-2 flex justify-between items-center border-b-[1px] border-[#767474] hover:text-[#02838d]">
+            <a href="#">Plan</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li class="menu-item px-2 flex justify-between items-center border-b-[1px] border-[#767474] hover:text-[#02838d]">
+            <a href="#">Connect</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="w-[370px] px-4 space-y-4 overflow-y-auto relative pt-[50px] pb-[130px]">
+        <div class="flex justify-between items-center py-4 back-menu cursor-pointer absolute top-0 w-full p-4 left-0" onclick="backMenu()">
+          <i class="fa-solid fa-chevron-left"></i>
+          <p class="flex-auto text-center text-[20px] font-bold" >Health Conditions</p>
+        </div>
+        <div class="sub-menu-mobile hidden">
+          <div class="space-y-[16px]">
+            <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+              <p>Featured</p>
+              <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                <span class="mr-1">All</span>
+                <i
+                  class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+              </a>
+            </div>
+            <ul class="text-[18px] space-y-4 px-3">
+              <li><a href="https://www.healthline.com/breast-cancer">Breast Cancer</a></li>
+              <li><a href="https://www.healthline.com/inflammatory-bowel-disease">IBD </a></li>
+              <li><a href="https://www.healthline.com/migraine">Migraine</a></li>
+              <li><a href="https://www.healthline.com/multiple-sclerosis">Multiple Sclerosis (MS)</a></li>
+              <li><a href="https://www.healthline.com/rheumatoid-arthritis">Rheumatoid Arthritis</a></li>
+              <li><a href="https://www.healthline.com/type-2-diabetes">Type 2 Diabetes</a></li>
+              <li><a href="https://www.healthline.com/sponsored-topics">Sponsored Topics</a></li>
+            </ul>
+          </div>
+          <div class="flex-auto space-y-[16px]">
+            <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+              <p>Articles</p>
+              <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                <span class="mr-1">All</span>
+                <i
+                  class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+              </a>
+            </div>
+            <ul role="menu" class="space-y-3 text-[18px] px-3">
+              <li><a href="https://www.healthline.com/health/gerd">Acid
+                  Reflux</a>
+              </li>
+              <li><a href="https://www.healthline.com/health/adhd">ADHD</a></li>
+              <li><a href="https://www.healthline.com/health/allergies">Allergies</a></li>
+              <li><a href="https://www.healthline.com/health/alzheimers-disease">Alzheimer's &amp;
+                  Dementia</a></li>
+              <li><a href="https://www.healthline.com/health/bipolar-disorder">Bipolar Disorder</a></li>
+              <li><a href="https://www.healthline.com/health/cancer">Cancer</a>
+              </li>
+              <li><a href="https://www.healthline.com/health/crohns-disease">Crohn's Disease</a></li>
+              <li><a href="https://www.healthline.com/health/chronic-pain">Chronic
+                  Pain</a></li>
+              <li><a href="https://www.healthline.com/health/cold-flu">Cold &amp;
+                  Flu</a></li>
+              <li><a href="https://www.healthline.com/health/copd">COPD</a></li>
+              <li><a href="https://www.healthline.com/health/depression">Depression</a></li>
+              <li><a href="https://www.healthline.com/health/fibromyalgia">Fibromyalgia</a></li>
+              <li><a href="https://www.healthline.com/health/heart-disease">Heart Disease</a></li>
+              <li><a href="https://www.healthline.com/health/high-cholesterol">High Cholesterol</a></li>
+              <li><a href="https://www.healthline.com/health/hiv-aids">HIV</a></li>
+              <li><a href="https://www.healthline.com/health/high-blood-pressure-hypertension">Hypertension</a>
+              </li>
+              <li><a href="https://www.healthline.com/health/managing-idiopathic-pulmonary-fibrosis">IPF</a>
+              </li>
+              <li><a chref="https://www.healthline.com/health/osteoarthritis">Osteoarthritis</a></li>
+              <li><a href="https://www.healthline.com/health/psoriasis">Psoriasis</a></li>
+              <li><a href="https://www.healthline.com/health/skin-disorders">Skin Disorders and Care</a></li>
+              <li><a href="https://www.healthline.com/health/sexually-transmitted-diseases">STDs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-menu-mobile hidden">
+          <div class="space-y-[16px]">
+            <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+              <p>Wellness Topics</p>
+              <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                <span class="mr-1">All</span>
+                <i
+                  class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+              </a>
+            </div>
+            <ul class="space-y-3 text-[18px] px-3">
+              <li><a href="https://www.healthline.com/nutrition">Nutrition</a></li>
+              <li><a href="https://www.healthline.com/fitness">Fitness</a></li>
+              <li><a href="https://www.healthline.com/skincare">Skin Care</a></li>
+              <li><a href="https://www.healthline.com/sexual-health">Sexual Health</a></li>
+              <li><a href="https://www.healthline.com/program/wellness">Women's Health</a></li>
+              <li><a href="https://www.healthline.com/mental-health">Mental Well-Being</a></li>
+              <li><a href="https://www.healthline.com/sleep">Sleep</a></li>
+            </ul>
+          </div>
+          <div class="space-y-[16px]">
+            <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+              <p>Featured</p>
+              <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                <span class="mr-1">All</span>
+                <i
+                  class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+              </a>
+            </div>
+            <ul class="space-y-3 text-[18px] px-3">
+              <li><a href="https://www.healthline.com/reviews/vitamin-and-supplement-products">Vitamins &amp;
+                  Supplements</a></li>
+              <li><a href="https://www.healthline.com/reviews/sleep-products">Sleep</a></li>
+              <li><a href="https://www.healthline.com/reviews/mental-health-services-and-products">Mental Health</a></li>
+              <li><a href="https://www.healthline.com/reviews/nutrition-products">Nutrition</a></li>
+              <li><a href="https://www.healthline.com/reviews/at-home-testing-products">At-Home Testing</a></li>
+              <li><a href="https://www.healthline.com/reviews/cbd-products">CBD</a></li>
+              <li><a href="https://www.healthline.com/reviews/mens-health-products">Men’s Health</a></li>
+            </ul>
+          </div>
+          <div class="space-y-[16px]">
+            <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+              <p>Original Series</p>
+              <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                <span class="mr-1">All</span>
+                <i
+                  class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+              </a>
+            </div>
+            <ul class="space-y-3 text-[18px] px-3">
+              <li>
+                <a class="flex gap-5 items-center" href="https://www.healthline.com/content-series/fresh-food-fast">
+                  <img class="w-[50px] h-[50px]"
+                    src="https://media.post.rvohealth.io/wp-content/uploads/2021/07/FFF_lead-logo4-23.png?w=240&amp;h=240"
+                    alt="">
+                  <div>
+                    <span class="font-bold">Fresh Food Fast</span>
+                    <p class="text-[14px]">Food hacks to make eating healthier, easier.</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="flex gap-5 items-center" href="https://www.healthline.com/content-series/diagnosis-diaries">
+                  <img class="w-[50px] h-[50px]"
+                    src="https://media.post.rvohealth.io/wp-content/uploads/2022/07/HL-icon-diagnosis-diaries-1.png"
+                    alt="">
+                  <div>
+                    <span class="font-bold">Diagnosis Diaries</span>
+                    <p class="text-[14px]">Real diagnosis stories from people who get it.</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="flex gap-5 items-center" href="https://www.healthline.com/content-series/youre-not-alone">
+                  <img class="w-[50px] h-[50px]"
+                    src="https://media.post.rvohealth.io/wp-content/uploads/2022/07/HL-icon-youre-not-alone-1.png" alt="">
+                  <div>
+                    <span class="font-bold">You’re Not Alone</span>
+                    <p class="text-[14px]">Stories from real people that destigmatize mental health conditions.</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="flex gap-5 items-center" href="https://www.healthline.com/content-series/present-tense">
+                  <img class="w-[50px] h-[50px]"
+                    src="https://media.post.rvohealth.io/wp-content/uploads/2021/05/HL-Content_Series-Present_Tense-Series_Logo-500x500-Series_Logo.png"
+                    alt="">
+                  <div>
+                    <span class="font-bold">Present Tense</span>
+                    <p class="text-[14px]">Real-world mindfulness for busy people.</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <div class="space-y-[16px]">
+            <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+              <p>Video Series</p>
+              <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                <span class="mr-1">All</span>
+                <i
+                  class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+              </a>
+            </div>
+            <ul class="space-y-3 text-[18px] px-3">
+              <li>
+                <a class="flex gap-5 items-center" href="https://www.healthline.com/health/video/youth-in-focus">
+                  <img src="https://media.post.rvohealth.io/wp-content/uploads/2022/07/240x240-Youth-in-Focus.png" alt=""
+                    class="w-[50px] h-[50px]">
+                  <div>
+                    <span class="font-bold">Youth in Focus</span>
+                    <p class="text-[14px]">Mental health challenges facing our youth.</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="flex gap-5 items-center"
+                  href="https://www.healthline.com/health/nutrition/video/healthy-harvest">
+                  <img
+                    src="https://media.post.rvohealth.io/wp-content/uploads/2022/09/Healthy_harvest_icon_Artboard-4-transformed.png"
+                    alt="" class="w-[50px] h-[50px]">
+                  <div>
+                    <span class="font-bold">Healthy Harvest</span>
+                    <p class="text-[14px]">Meet your food, from farm to table.</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="flex gap-5 items-center"
+                  href="https://www.healthline.com/health/breast-cancer/metastatic-breast-cancer-artist-eye">
+                  <img src="https://media.post.rvohealth.io/wp-content/uploads/2023/10/Through_an_artists_eye-07.png"
+                    alt="" class="w-[50px] h-[50px]">
+                  <div>
+                    <span class="font-bold">Through An Artist's Eye</span>
+                    <p class="text-[14px]">A breast cancer story told through art.</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="flex gap-5 items-center" href="https://www.healthline.com/health/video/future-of-health">
+                  <img src="https://media.post.rvohealth.io/wp-content/uploads/2022/07/HL-icon-future-of-health-1.png"
+                    alt="" class="w-[50px] h-[50px]">
+                  <div>
+                    <span class="font-bold">Future of Health</span>
+                    <p class="text-[14px]">Innovations shaping the future of health.</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-menu-mobile hidden">
+          <div class="space-y-[16px]">
+            <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+              <p>Health Challenges</p>
+              <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                <span class="mr-1">All</span>
+                <i
+                  class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+              </a>
+            </div>
+            <ul class="space-y-3 text-[18px] px-3">
+              <li><a href="https://www.healthline.com/newsletter-signup/mindfulness-challenge">Mindful Eating</a></li>
+              <li><a href="https://www.healthline.com/newsletter-signup/sugar-challenge">Sugar Savvy</a></li>
+              <li><a href="https://www.healthline.com/newsletter-signup/move-your-body-challenge">Move Your Body</a></li>
+              <li><a href="https://www.healthline.com/newsletter-signup/gut-check-challenge">Gut Health</a></li>
+              <li><a href="https://www.healthline.com/newsletter-signup/mood-foods-challenge">Mood Foods</a></li>
+              <li><a href="https://www.healthline.com/newsletter-signup/align-your-spine-challenge">Align Your Spine</a>
+              </li>
+            </ul>
+  
+          </div>
+          <div class="space-y-[16px]">
+            <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+              <p>Find Care</p>
+              <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                <span class="mr-1">All</span>
+                <i
+                  class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+              </a>
+            </div>
+            <ul class="space-y-3 text-[18px] px-3">
+              <li><a target="_blank"
+                  href="https://care.healthline.com/find-care/specialty/primary-care-doctors?ref=global">Primary Care</a>
+              </li>
+              <li><a target="_blank"
+                  href="https://care.healthline.com/find-care/specialty/mental-health-professional?ref=global">Mental
+                  Health</a></li>
+              <li><a target="_blank"
+                  href="https://care.healthline.com/find-care/specialty/obstetrics-gynecology?ref=global">OB-GYN</a></li>
+              <li><a target="_blank"
+                  href="https://care.healthline.com/find-care/specialty/dermatology?ref=global">Dermatologists</a></li>
+              <li><a target="_blank"
+                  href="https://care.healthline.com/find-care/specialty/neurology?ref=global">Neurologists</a></li>
+              <li><a target="_blank"
+                  href="https://care.healthline.com/find-care/specialty/cardiology?ref=global">Cardiologists</a></li>
+              <li><a target="_blank"
+                  href="https://care.healthline.com/find-care/specialty/orthopedic-surgery?ref=global">Orthopedists</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-[16px]">
+            <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+              <p>Lifestyle Quizzes</p>
+              <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                <span class="mr-1">All</span>
+                <i
+                  class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+              </a>
+            </div>
+            <ul class="space-y-3 text-[18px] px-3">
+              <li>
+                <a href="https://www.healthline.com/nutrition/weight-management-quiz">Weight Management</a>
+              </li>
+              <li>
+                <a href="https://www.healthline.com/health/depression/teenage-quiz">Am I Depressed? A Quiz for Teens</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.healthline.com/health/mental-health/quiz-are-you-a-workaholic#quiz-are-you-a-workaholic">Are
+                  You a Workaholic?</a>
+              </li>
+              <li>
+                <a href="https://www.healthline.com/health/healthy-sleep/quiz-how-well-do-you-sleep">How Well Do You
+                  Sleep?</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-[16px]">
+            <div class="flex gap-3 items-center justify-between border-b-[3px] py-3 border-black font-bold">
+              <p>Tools & Resources</p>
+              <a class="css-dke6ht" href="https://www.healthline.com/conditions">
+                <span class="mr-1">All</span>
+                <i
+                  class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+              </a>
+            </div>
+            <ul class="space-y-3 text-[18px] px-3">
+              <li><a href="https://www.healthline.com/health-news" target="_blank">Health News</a></li>
+              <li><a
+                  href="https://activation.healthline.com/assessment/assessment/diets/prompt/1?v=1&tc=120226&subid=hl_dietfinder_1_"
+                  target="_blank" rel="noopener noreferrer nofollow">Find a Diet</a></li>
+              <li><a href="https://activation.healthline.com/assessment/assessment/pregnancy-snacks/prompt/1?v=1"
+                  target="_blank" rel="noopener noreferrer nofollow">Find Healthy Snacks</a></li>
+              <li><a href="https://www.healthline.com/drugs">Drugs A-Z</a></li>
+              <li><a href="https://www.healthline.com/directory/topics">Health A-Z</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-menu-mobile hidden">
+          <div class="space-y-[16px]">
+            <div class=" border-b-[3px] py-3 border-[#767474] px-3">
+              <div class="flex gap-3 items-center justify-between font-bold">
+                <p class="text-[20px]">Find Your Bezzy Community</p>
+                <a class="css-dke6ht" href="https://www.bezzy.com/?utm_source=healthline&utm_medium=nav-bar-connections">
+                  <span class="mr-1">All</span>
+                  <i
+                    class="fa-solid fa-arrow-right py-[4px] px-[5px] border-[1px] text-[12px] border-black rounded-[50%]"></i>
+                </a>
+              </div>
+              <p class="text-[16px]">Bezzy communities provide meaningful connections with others living with chronic
+                conditions. Join Bezzy on the web or mobile app.</p>
+            </div>
+            <div class="border-b-[3px] py-3 border-[#767474]">
+              <ul class="grid grid-cols-1 gap-4 mb-4 px-3">
+                <li>
+                  <a class="space-y-2"
+                    href="https://www.bezzybc.com/lp/2/?verzenio&utm_source=healthline&utm_medium=nav-bar-connections"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="flex gap-3 items-center font-semibold">
+                      <img class="w-[70px] h-[70px]"
+                        src="https://media.post.rvohealth.io/wp-content/uploads/2022/01/Bezzy-Breast-Cancer.png" alt="">
+                      <p>Breast Cancer</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="space-y-2"
+                    href="https://www.bezzyibd.com/?utm_source=healthline&utm_medium=nav-bar-connections" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="flex gap-3 items-center font-semibold">
+                      <img class="w-[70px] h-[70px]"
+                        src="https://media.post.rvohealth.io/wp-content/uploads/2022/01/Bezzy-Inflammatory-Bowel-Disease.png"
+                        alt="">
+                      <p>Inflammatory Bowel Disease</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="space-y-2"
+                    href="https://www.bezzycopd.com/?utm_source=healthline&utm_medium=nav-bar-connections" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="flex gap-3 items-center font-semibold">
+                      <img class="w-[70px] h-[70px]"
+                        src="https://media.post.rvohealth.io/wp-content/uploads/2024/04/Bezzy_COPD_Icon_Circle_280x280.png"
+                        alt="">
+                      <p>COPD</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="space-y-2"
+                    href="https://www.bezzymigraine.com/?utm_source=healthline&utm_medium=nav-bar-connections"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="flex gap-3 items-center font-semibold">
+                      <img class="w-[70px] h-[70px]"
+                        src="https://media.post.rvohealth.io/wp-content/uploads/2022/01/Bezzy-Migraine.png" alt="">
+                      <p>Migraine</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="space-y-2"
+                    href="https://www.bezzyms.com/?utm_source=healthline&utm_medium=nav-bar-connections" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="flex gap-3 items-center font-semibold">
+                      <img class="w-[70px] h-[70px]"
+                        src="https://media.post.rvohealth.io/wp-content/uploads/2022/01/Bezzy-Multiple-Sclerosis.png"
+                        alt="">
+                      <p>Multiple Sclerosis</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="space-y-2"
+                    href="https://www.bezzypsoriasis.com/?utm_source=healthline&utm_medium=nav-bar-connections"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="flex gap-3 items-center font-semibold">
+                      <img class="w-[70px] h-[70px]"
+                        src="https://media.post.rvohealth.io/wp-content/uploads/2022/04/Bezzy-PsO.png" alt="">
+                      <p>Psoriasis</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="px-3">
+                <p class="text-[20px] font-bold">Follow us on social media</p>
+                <p class="text-[16px]">Can't get enough? Connect with us for all things health.</p>
+              </div>
+            </div>
+            <div class="flex gap-10 items-center text-[25px] justify-center lg:justify-start">
+              <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                  <rect width="24" height="24" fill="none" />
+                  <path fill="black"
+                    d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z" />
+                </svg>
+              </a>
+              <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                  <rect width="24" height="24" fill="none" />
+                  <path fill="black"
+                    d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23" />
+                </svg>
+              </a>
+              <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                  <rect width="16" height="16" fill="none" />
+                  <path fill="black"
+                    d="M8 5.67C6.71 5.67 5.67 6.72 5.67 8S6.72 10.33 8 10.33S10.33 9.28 10.33 8S9.28 5.67 8 5.67M15 8c0-.97 0-1.92-.05-2.89c-.05-1.12-.31-2.12-1.13-2.93c-.82-.82-1.81-1.08-2.93-1.13C9.92 1 8.97 1 8 1s-1.92 0-2.89.05c-1.12.05-2.12.31-2.93 1.13C1.36 3 1.1 3.99 1.05 5.11C1 6.08 1 7.03 1 8s0 1.92.05 2.89c.05 1.12.31 2.12 1.13 2.93c.82.82 1.81 1.08 2.93 1.13C6.08 15 7.03 15 8 15s1.92 0 2.89-.05c1.12-.05 2.12-.31 2.93-1.13c.82-.82 1.08-1.81 1.13-2.93c.06-.96.05-1.92.05-2.89m-7 3.59c-1.99 0-3.59-1.6-3.59-3.59S6.01 4.41 8 4.41s3.59 1.6 3.59 3.59s-1.6 3.59-3.59 3.59m3.74-6.49c-.46 0-.84-.37-.84-.84s.37-.84.84-.84s.84.37.84.84a.8.8 0 0 1-.24.59a.8.8 0 0 1-.59.24Z" />
+                </svg>
+              </a>
+              <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                  <rect width="24" height="24" fill="none" />
+                  <circle cx="4.983" cy="5.009" r="2.188" fill="black" />
+                  <path fill="black"
+                    d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118c1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783c-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0H6.87v12.139H3.095z" />
+                </svg>
+              </a>
+              <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                  <rect width="24" height="24" fill="none" />
+                  <path fill="black" fill-rule="evenodd"
+                    d="M22.54 6.42a2.77 2.77 0 0 0-1.945-1.957C18.88 4 12 4 12 4s-6.88 0-8.595.463A2.77 2.77 0 0 0 1.46 6.42C1 8.148 1 11.75 1 11.75s0 3.602.46 5.33a2.77 2.77 0 0 0 1.945 1.958C5.121 19.5 12 19.5 12 19.5s6.88 0 8.595-.462a2.77 2.77 0 0 0 1.945-1.958c.46-1.726.46-5.33.46-5.33s0-3.602-.46-5.33M9.75 8.479v6.542l5.75-3.271z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
+                  <rect width="32" height="32" fill="none" />
+                  <path fill="black" d="M0 0v32h32V0zm25.599 12.803h-6.401v6.395h-6.395v6.401H6.402V6.402h19.197z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -223,5 +1227,6 @@
   </footer>
   </div>
 </body>
+<script src="../layouts/header.js"></script>
 
 </html>

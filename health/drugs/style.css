@@ -11,6 +11,9 @@
 .text-webkit-center {
   text-align: -webkit-center;
 }
+#menu-hash .menu-item {
+  padding: 0 !important;
+}
 
 a:hover {
   color: #02838d;
